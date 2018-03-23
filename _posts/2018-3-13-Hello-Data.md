@@ -295,7 +295,7 @@ Which makes sense: a rectifying linear unit is zero for half of its input, so yo
 
 ___
 ####  F_(beta) score: An easy to combine precision and recall measures
-```text
+```
   F_(beta) = (1+beta^2)*(precision*recall)/(beta^2*precision+recall)
 
   F1 = 2*(precision*recall)/(precision+recall)
