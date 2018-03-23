@@ -295,11 +295,11 @@ Which makes sense: a rectifying linear unit is zero for half of its input, so yo
 
 ___
 ####  F_(beta) score: An easy to combine precision and recall measures
-```
-  F_(beta) = (1+beta^2)*(precision*recall)/(beta^2*precision+recall)
+>
+>F_(beta) = (1+beta^2)(precision*recall)/(beta^2*precision+recall)
+>
+>F1 = 2*(precision*recall)/(precision+recall)
 
-  F1 = 2*(precision*recall)/(precision+recall)
-```
 ___
 #### Symmetric Mean Absolute Percent Error (SMAPE)
 ##### References:
@@ -307,10 +307,11 @@ ___
 
 	An alternative to Mean Absolute Percent Error (MAPE) when there are zero or near-zero demand for items. SMAPE self-limits to an error rate of 200%, reducing the influence of these low volume items. Low volume items are problematic because they could otherwise have infinitely high error rates that skew the overall error rate.
 	SMAPE is the forecast minus actuals divided by the sum of forecasts and actuals as expressed in formula:
+  
 
-SMAPE = 2/N * Sum_(k=1~N)\|Fk-Ak\|/(Fk+Ak)
-	
-k = each time period.
+>SMAPE = 2/N * Sum_(k=1~N)\|Fk-Ak\|/(Fk+Ak)
+>
+>k = each time period.
 
 ####  Mean Absolute Percent Error (MAPE)
 ##### References:
@@ -321,9 +322,9 @@ Mean Absolute Percent Error (MAPE) is the most common measure of forecast error.
 With zeros or near-zeros, MAPE can give a distorted picture of error. The error on a near-zero item can be infinitely high, causing a distortion to the overall error rate when it is averaged in. For forecasts of items that are near or at zero volume, Symmetric Mean Absolute Percent Error (SMAPE) is a better measure.
 	MAPE is the average absolute percent error for each time period or forecast minus actuals divided by actuals:
 
-MAPE = 1/N * Sum_(k=1~N)\|Fk-Ak\|/Ak
-
-k = each time period.
+>MAPE = 1/N * Sum_(k=1~N)\|Fk-Ak\|/Ak
+>
+>k = each time period.
 
 ---
 
@@ -353,17 +354,16 @@ k = each time period.
 
 Given a measure η, we deﬁne an exponential family of probability distributions as those distributions whose density (relative to η) have the following general form: 
 
-	p(x|η) = h(x)exp{ηT . T(x) − A(η)}
-
-Key point: x and η only “mix” in exp(ηT . T(x))
-```text
-  η : vector of "nature parameters"
-T(x): vector of "Natural Sufficient Statistic"
-A(η): partition function/ cumulant generating function
-  h : X → R
-  η : Θ → R
-  B : Θ → R.
-```
+>p(x|η) = h(x)exp{ηT . T(x) − A(η)}
+>
+>Key point: x and η only “mix” in exp(ηT . T(x))
+>
+>η : vector of "nature parameters"
+>T(x): vector of "Natural Sufficient Statistic"
+>A(η): partition function/ cumulant generating function
+>h : X → R
+>η : Θ → R
+>B : Θ → R.
 
 #### Generalized Linear Model, GLM
 ##### References:
