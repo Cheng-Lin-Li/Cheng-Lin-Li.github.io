@@ -165,15 +165,15 @@ A learning model that summarizes data with a set of parameters of fixed size (in
   
   Model examples:
 
-      1-1. Linear regression
-
-      1-2. Logistic regression
-
-      1-4. Perceptron
-
-      1-5. Naive Bayes
-
-      1-6. ...etc.
+  >1-1. Linear regression
+  >
+  >1-2. Logistic regression
+  >
+  >1-4. Perceptron
+  >
+  >1-5. Naive Bayes
+  >
+  >1-6. ...etc.
 
 
 * Nonparametric Methods: Don't summarize data into parameters.
@@ -183,12 +183,11 @@ Nonparametric methods are good when you have a lot of data and no prior knowledg
   Models growth with data.
   
   Model examples:
-
-      1-1. k-nearest neighbors
-
-      1-2. Support Vector Machine
-
-      1-3. Decision Tree: (CART and C4.5)
+  >1-1. k-nearest neighbors
+  >
+  >1-2. Support Vector Machine
+  >
+  >1-3. Decision Tree: (CART and C4.5)
 
 ---
 #### Generative & Discriminative models:
