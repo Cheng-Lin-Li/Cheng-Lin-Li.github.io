@@ -363,7 +363,7 @@ Given a measure η, we deﬁne an exponential family of probability distribution
 >T(x): vector of "Natural Sufficient Statistic"
 >
 >A(η): partition function/ cumulant generating function
->
+
 >h : X → R
 >
 >η : Θ → R
