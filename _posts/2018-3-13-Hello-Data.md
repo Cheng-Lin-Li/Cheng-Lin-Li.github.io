@@ -355,14 +355,19 @@ With zeros or near-zeros, MAPE can give a distorted picture of error. The error 
 Given a measure η, we deﬁne an exponential family of probability distributions as those distributions whose density (relative to η) have the following general form: 
 
 >p(x|η) = h(x)exp{ηT . T(x) − A(η)}
->
+
 >Key point: x and η only “mix” in exp(ηT . T(x))
->
+
 >η : vector of "nature parameters"
+>
 >T(x): vector of "Natural Sufficient Statistic"
+>
 >A(η): partition function/ cumulant generating function
+>
 >h : X → R
+>
 >η : Θ → R
+>
 >B : Θ → R.
 
 #### Generalized Linear Model, GLM
