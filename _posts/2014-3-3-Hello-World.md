@@ -3,9 +3,7 @@ layout: post
 title: Hello Data !!
 ---
 
-# Hello Data !!
-
-This is my learning notebook which includes AI, Machine Learning, Big Data techniques, Knowledge Graph, Information Visualization and natural language processing.
+This is my learning notebook which includes AI, Machine Learning, Big Data techniques, Knowledge Graph, Information Visualization and Natural Language Processing.
 
 I am a lifelong learner and passinate to contribute my knowledge to impact the world. After twenty years dedicate working on IT Application development departments for Intranet, B2C, B2B eCommerce portal and trading Websites, I observed the AI and DATA era is coming. It is time to let DATA tell its story by AI / machine learning algorithms and that's the reason why I resigned from J.P. Morgan Asset Management (Taiwan) in 2016 and went back to school to be a graduate student in Viterbi school of engineering at University of Southern California. My research area is data informatics and I would like to share what I learn with everyone.
 
