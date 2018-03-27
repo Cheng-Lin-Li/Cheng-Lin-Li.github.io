@@ -1,10 +1,10 @@
 ---
 layout: page
-title: Project
+title: Projects and Competition notebooks
 permalink: /project/
 ---
 
-Projects and Competition notebooks:
+How to start a project in machine learning? How can I leverage all those techniques into real world challenge? There are projects and Jupyter notebook collections for you as a starting points.
 
   1. Stock Price Forecasting by Stock Selections: Python/Tensorflow
     
