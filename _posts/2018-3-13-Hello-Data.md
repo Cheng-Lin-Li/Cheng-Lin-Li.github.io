@@ -5,22 +5,7 @@ title: Hello Data !!
 
 This is my learning notebook which includes AI, Machine Learning, Big Data techniques, Knowledge Graph, Information Visualization and Natural Language Processing.
 
-I am a lifelong learner and passinate to contribute my knowledge to impact the world. After twenty years dedicate working on IT Application development departments for Intranet, B2C, B2B eCommerce portal and trading Websites, I observed the AI and DATA era is coming. It is time to let DATA tell its story by AI / machine learning algorithms and that's the reason why I resigned from J.P. Morgan Asset Management (Taiwan) in 2016 and went back to school to be a graduate student in Viterbi school of engineering at University of Southern California. My research area is data informatics and I would like to share what I learn with everyone.
-
-There are several GitHub repositories below for your reference as first step. I hope my works can help you to understand all those concepts and algorithms:
-
-[ >>AI<< ](https://cheng-lin-li.github.io/AI/) includes my implementations of classical A.I. algorithms, like Alpha-Beta Pruning, Propositional Logic, and decision networks (Not yet complete).
-
-[ >>Machine Learning<< ](https://cheng-lin-li.github.io/MachineLearning/) includes my implementations of machine learning algorithms, programs demostrate how to use scikit-learn, and tensorflow frameworks.
-
-[ >>Spark<< ](https://cheng-lin-li.github.io/Spark/) include A-priori and SON, ALS with UV Decomposition, TF-IDF with K-Means, Matrix Multiplication by Two Phases approach, and Minhash and Locality-Sensitive Hash (LSH).
-
-[ >>Information Visualization<< ](https://cheng-lin-li.github.io/InformationVisualization/) includes my codes for D3js, R, ggplot2.
-
-[ >>Knowledge Graph<< ](https://cheng-lin-li.github.io/KnowledgeGraph/) include utilities programs like JSONLines package program, facebook crawler, information extraction, and a final project to combine all those techniques and machine learning algorithm to predict the trend of Dow Jones Industrial Average (DJIA) in next day and next 30 day.
-
-[ >>Neural Language Processing<< ](https://cheng-lin-li.github.io/Natural-Language-Processing/) include tagging program based on HMM-Viterbi with add one smoothing for transition probability, Good Turing smoothing / rule base algorithm for unknown words. (under constructing).
-
+I am a lifelong learner and passinate to contribute my knowledge to impact the world. After twenty years dedicate working on IT Application development departments for Intranet, B2C, B2B eCommerce portal and trading Websites, I observed the A.I. and DATA era is coming. It is time to let DATA tell its story by A.I. / machine learning algorithms and that's the reason why I resigned from J.P. Morgan Asset Management (Taiwan) in 2016 and went back to school to be a graduate student in Viterbi school of engineering at University of Southern California. My research area is data informatics and I would like to share what I learn with everyone.
 
 ---
 

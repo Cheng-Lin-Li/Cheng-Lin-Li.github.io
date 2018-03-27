@@ -8,7 +8,7 @@ Cheng-Lin Li is a graduate student pursuing a Master’s Degree in Data Informat
 
 ### More Information
 
-I am a data scientist, and machine learning engineer, passionate in applying machine learning, big data techniques to impact the world with proven experience of translating abstract concepts and analysis results into business actions by leading cross-functional teams in J.P. Morgan Asset Management (Taiwan) and Acer Inc.
+I am a data scientist, machine learning engineer, lifelong learner, enabler from abstract concepts to business actions. This is my blog to discuss A.I., machine learning, natural language processing, and big data.
 
 ### My GitHub Pages
 There are several GitHub repositories below for your reference as first step. I hope my works can help you to understand all those concepts and algorithms:
