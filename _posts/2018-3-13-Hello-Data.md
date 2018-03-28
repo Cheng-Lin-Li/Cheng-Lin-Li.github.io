@@ -9,36 +9,22 @@ I am a lifelong learner and passinate to contribute my knowledge to impact the w
 
 I will leverage my spare time to enrich this notebook style blog from time to time. Your comments are appreciated.
 
-### Some Technology notes are drafted here, I may write articles for them in the future.
-
 ---
-### Foundations
-Mathematics is the foundation of science, you may need to review below areas if you have any difficulty on rest of topics.
-
-1. Calculus
-2. Statistic
-  2-1. Probabilities and Expectations
-
-    2-1-1. [ReviewofProbabilityTheory at Stanford CS229 machine learning](http://cs229.stanford.edu/section/cs229-prob.pdf)
-  
-    2-1-2. Distributions and Tests
-  
-3. Linar Algebra / Discrete Mathematics
-
-    3-1 [Linear Algebra Review and Reference at Stanford CS229 machine learning](http://cs229.stanford.edu/section/cs229-linalg.pdf)
-
-
----
+### Reference material:
 
 ### Artificial intelligence (AI)
 
 Textbook:
-
 1. [Stuart Russell,‎ Peter Norvig, Artificial Intelligence: A Modern Approach](http://aima.cs.berkeley.edu/)
 
 ---
 
 ### Machine Learning (ML)
+Textbook:
+1. [Introduction to Machine Learning-3rd, Ethem Alpaydin]
+2. [The Elements of Statistical Learning: Data Mining, Inference, and Prediction (Second Edition), by Trevor Hastie, Robert Tibshirani and Jerome Friedman](https://web.stanford.edu/~hastie/pub.htm)
+3. [Pattern Recognition And Machine Learning, Bishop](https://www.microsoft.com/en-us/research/people/cmbishop/?from=http%3A%2F%2Fresearch.microsoft.com%2Fen-us%2Fum%2Fpeople%2Fcmbishop%2Fprml%2F)
+4. [Deep Learning, Ian Goodfellow and Yoshua Bengio and Aaron Courville](http://www.deeplearningbook.org/)
 
 Articles & Papers:
 1. [Deep Learning: An Introduction for Applied Mathematicians](https://arxiv.org/abs/1801.05894v1)
@@ -48,6 +34,7 @@ Training Material and Courses:
 1. [Representation learning in Montreal Institute for Learning Algorithms @Universite' de Montre'al](https://ift6135h18.wordpress.com/) (Deep Learning)
 2. [Reinforcement Learning: An Introduction by Prof. Richard S. Sutton & Andrew G. Barto @University of Alberta](https://drive.google.com/drive/folders/0B3w765rOKuKANmxNbXdwaE1YU1k), [OR try this alternative link.](http://www.incompleteideas.net/book/the-book-2nd.html)
 3. [Carnegie Mellon University - 10715 Advanced Introduction to Machine Learning: lectures](https://sites.google.com/site/10715advancedmlintro2017f/lectures)
+4. [Deeplearning.ai, Andrew Ng, Introductory deep learning course.](https://www.deeplearning.ai/)
 
 ---
 ### Natural Language Processing(NLP)
@@ -69,6 +56,8 @@ Training Material and Courses:
 2. [Natural Language Processing with Deep Learning (Winter 2017) by Chris Manning & Richard Socher @Standford University: Material website](http://cs224d.stanford.edu/) [,and video link](https://www.youtube.com/playlist?list=PL3FW7Lu3i5Jsnh1rnUwq_TcylNr7EkRe6)
 
 ---
+### Some Technology notes are drafted here, I may write articles for them in the future.
+
 #### What is Artificial Intelligence ?
 Association for the Advancement of Artificial Intelligence (AAAI): 
 
