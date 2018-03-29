@@ -21,7 +21,7 @@ Textbook:
 
 ### Machine Learning (ML)
 Textbook:
-1. [Introduction to Machine Learning-3rd, Ethem Alpaydin]
+1. [Introduction to Machine Learning-3rd, Ethem Alpaydin](https://mitpress.mit.edu/books/introduction-machine-learning-0)
 2. [The Elements of Statistical Learning: Data Mining, Inference, and Prediction (Second Edition), by Trevor Hastie, Robert Tibshirani and Jerome Friedman](https://web.stanford.edu/~hastie/pub.htm)
 3. [Pattern Recognition And Machine Learning, Bishop](https://www.microsoft.com/en-us/research/people/cmbishop/?from=http%3A%2F%2Fresearch.microsoft.com%2Fen-us%2Fum%2Fpeople%2Fcmbishop%2Fprml%2F)
 4. [Deep Learning, Ian Goodfellow and Yoshua Bengio and Aaron Courville](http://www.deeplearningbook.org/)
