@@ -33,14 +33,18 @@ How to start a project in machine learning? How can I leverage all those techniq
       Project live demo site:[Business Cycle Introduction](http://www-scf.usc.edu/~chenglil/business_cycle/)
 
       Github address: [https://github.com/Cheng-Lin-Li/InformationVisualization/tree/master/BusinessCycle](https://github.com/Cheng-Lin-Li/InformationVisualization/tree/master/BusinessCycle)
+
   4. Number of vehicles Prediction: scikit-learn/Keras
       This task is to perform prediction for number of vehicles by given data. This is a demo program to leverage four models (SVR, NN, LSTM, GRU) from existing libraries in one challenge. The final result can be improved by some emsemble techniques like Bootstrap aggregating (bagging), boosting, and stacking to get better performance.
-      Github address: [https://github.com/Cheng-Lin-Li/MachineLearning/tree/master/Competition/McKinseyAnalyticsPrediction](https://github.com/Cheng-Lin-Li/MachineLearning/tree/master/Competition/McKinseyAnalyticsPrediction)
       
+      Jupyter Notebook: [Prediction Number of Vehicles](https://github.com/Cheng-Lin-Li/MachineLearning/blob/master/Competition/McKinseyAnalyticsPrediction/NumberOfVehiclesPrediction.ipynb)
+
+      Github address: [https://github.com/Cheng-Lin-Li/MachineLearning/tree/master/Competition/McKinseyAnalyticsPrediction](https://github.com/Cheng-Lin-Li/MachineLearning/tree/master/Competition/McKinseyAnalyticsPrediction)
+
   5. Recommendation System: scikit-learn/Surprise (under constructing)
       This task leverages Content Based Filtering and Singular Value decomposition (SVD) to perform recommendation system build up.
 
-      Github address: [https://github.com/Cheng-Lin-Li/MachineLearning/blob/master/Competition/McKinseyAnalyticsRecommendation/Recommendation.ipynb](https://github.com/Cheng-Lin-Li/MachineLearning/blob/master/Competition/McKinseyAnalyticsRecommendation/Recommendation.ipynb)
+      Jupyter Notebook: [https://github.com/Cheng-Lin-Li/MachineLearning/blob/master/Competition/McKinseyAnalyticsRecommendation/Recommendation.ipynb](https://github.com/Cheng-Lin-Li/MachineLearning/blob/master/Competition/McKinseyAnalyticsRecommendation/Recommendation.ipynb)
 
 
   6. Objects detection and segmentation: Keras/Tensorflow/OpenCV(under constructing)
@@ -48,7 +52,7 @@ How to start a project in machine learning? How can I leverage all those techniq
 
       My trial work to integrate threading webcam stream and the pre-trained for object detection and segmentation tasks.
 
-	  My demo notebook:[https://github.com/Cheng-Lin-Li/MachineLearning/blob/master/Competition/ObjectDetectionSegmentation/Video-Demo-Mask_RCNN.ipynb](https://github.com/Cheng-Lin-Li/MachineLearning/blob/master/Competition/ObjectDetectionSegmentation/Video-Demo-Mask_RCNN.ipynb)
+	  My demo Jupyter Notebook:[https://github.com/Cheng-Lin-Li/MachineLearning/blob/master/Competition/ObjectDetectionSegmentation/Video-Demo-Mask_RCNN.ipynb](https://github.com/Cheng-Lin-Li/MachineLearning/blob/master/Competition/ObjectDetectionSegmentation/Video-Demo-Mask_RCNN.ipynb)
 
         Github address:[https://github.com/Cheng-Lin-Li/MachineLearning/tree/master/Competition/ObjectDetectionSegmentation](https://github.com/Cheng-Lin-Li/MachineLearning/tree/master/Competition/ObjectDetectionSegmentation)
 
