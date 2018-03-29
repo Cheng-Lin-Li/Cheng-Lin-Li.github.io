@@ -31,10 +31,11 @@ Articles & Papers:
 2. [The History Began from AlexNet: A Comprehensive Survey on Deep Learning Approaches](https://arxiv.org/abs/1803.01164)
 
 Training Material and Courses:
-1. [Representation learning in Montreal Institute for Learning Algorithms @Universite' de Montre'al](https://ift6135h18.wordpress.com/) (Deep Learning)
-2. [Reinforcement Learning: An Introduction by Prof. Richard S. Sutton & Andrew G. Barto @University of Alberta](https://drive.google.com/drive/folders/0B3w765rOKuKANmxNbXdwaE1YU1k), [OR try this alternative link.](http://www.incompleteideas.net/book/the-book-2nd.html)
-3. [Carnegie Mellon University - 10715 Advanced Introduction to Machine Learning: lectures](https://sites.google.com/site/10715advancedmlintro2017f/lectures)
-4. [Deeplearning.ai, Andrew Ng, Introductory deep learning course.](https://www.deeplearning.ai/)
+1. [CS229: Machine Learning](http://cs229.stanford.edu/syllabus.html)
+2. [Representation learning in Montreal Institute for Learning Algorithms @Universite' de Montre'al](https://ift6135h18.wordpress.com/) (Deep Learning)
+3. [Reinforcement Learning: An Introduction by Prof. Richard S. Sutton & Andrew G. Barto @University of Alberta](https://drive.google.com/drive/folders/0B3w765rOKuKANmxNbXdwaE1YU1k), [OR try this alternative link.](http://www.incompleteideas.net/book/the-book-2nd.html)
+4. [Carnegie Mellon University - 10715 Advanced Introduction to Machine Learning: lectures](https://sites.google.com/site/10715advancedmlintro2017f/lectures)
+5. [Deeplearning.ai, Andrew Ng, Introductory deep learning course.](https://www.deeplearning.ai/)
 
 ---
 ### Natural Language Processing(NLP)
