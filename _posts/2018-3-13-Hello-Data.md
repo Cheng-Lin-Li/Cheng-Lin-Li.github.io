@@ -51,12 +51,17 @@ Articles & Papers:
 9. [Levy, Goldberg and Dagan (2015): Improving Distributional Similarity with Lessons Learned from Word Embeddings.](https://aclweb.org/anthology/Q/Q15/Q15-1016.pdf)
 
 
-
 Training Material and Courses:
 1. [Natural Language Processing (Fall 2017) by Prof. Jason Eisner @Johns Hopkins University](http://www.cs.jhu.edu/~jason/465/)
 2. [Natural Language Processing with Deep Learning (Winter 2017) by Chris Manning & Richard Socher @Standford University: Material website](http://cs224d.stanford.edu/) [,and video link](https://www.youtube.com/playlist?list=PL3FW7Lu3i5Jsnh1rnUwq_TcylNr7EkRe6)
 
 ---
+
+Statistics:
+[Statistics and R by Nathaniel E. Helwig@University of Minnesota](http://users.stat.umn.edu/~helwig/teaching.html)
+
+---
+
 ### Some Technology notes are drafted here, I may write articles for them in the future.
 
 #### What is Artificial Intelligence ?
