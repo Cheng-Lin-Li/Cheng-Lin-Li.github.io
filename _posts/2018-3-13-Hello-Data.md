@@ -64,32 +64,6 @@ Training Material and Courses:
 
 ### Some Technology notes are drafted here, I may write articles for them in the future.
 
-#### What is Artificial Intelligence ?
-Association for the Advancement of Artificial Intelligence (AAAI): 
-
-“The scientific understanding of the mechanisms underlying thought and intelligent behavior and their embodiment in machines.”
-
-There are different categories to aggretate AI algorithms:
-
-* Deductive learning: Leads to correct knowledge.
-  - Pros:
-    + Logical inference generates entailed statements.
-    + Probabilistic reasoning can lead to updated belief states.
-  - Cons:
-    + We often have insufficient knowledge for inference.
-  - Methods:
-    Classical AI algorithms.
-* Inductive learning: Arrives at may be incorrect conclusions.
-  - Pros:
-     + The learning can be better than not trying to learn at all.
-  - Cons: 
-     + Local optimals rather than global optimal.
-     + Overfitting issues.
-  - Methods:
-    Machine learning algorithms.
-     
-     
----
 #### Parametric vs. Nonparametric Methods.
 ##### reference:
 1. [Stuart Russell,‎ Peter Norvig, Artificial Intelligence: A Modern Approach](http://aima.cs.berkeley.edu/)
