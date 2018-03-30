@@ -83,6 +83,5 @@ Deep learning is a subset of machine learning.
 Deep learning focus on multiple (deep) layer of Artificial Neural Network(ANN) with different combinations.
 
 
-Reference:
+### Reference:
 1. Stuart Russel, Peter Norvig, Artificial Intelligence - A Mordern Approach, Third Edition.
-2. 
