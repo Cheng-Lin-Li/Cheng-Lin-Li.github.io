@@ -57,7 +57,7 @@ Training Material and Courses:
 
 ---
 
-Statistics:
+### Statistics:
 [Statistics and R by Nathaniel E. Helwig@University of Minnesota](http://users.stat.umn.edu/~helwig/teaching.html)
 
 ---
