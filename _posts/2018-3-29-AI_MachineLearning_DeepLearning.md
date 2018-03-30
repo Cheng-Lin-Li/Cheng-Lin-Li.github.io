@@ -3,7 +3,7 @@ layout: post
 title: What is the difference between AI, Machine Learning, and Deep Learning?
 ---
 
-![AI, machine learning, deep learning, and others][/images/2018-03-29-AI.svg]
+![AI, machine learning, deep learning, and others](/images/2018-03-29-AI.svg)
 ### Artificial Intelligence (A.I.)
 
 What is Artificial Intelligence ?
@@ -64,10 +64,11 @@ Deductive learning: From Generalized rules to lead to correct knowledge.
         2. Probabilistic reasoning can lead to updated belief states.
     Cons:
         1. We often have insufficient knowledge for inference.
-    Methods: Statistics algorithms. For example:
-        1. Bayesian theory and Naive Bayes classifier.
-        2. Markov Chain
-        3. Hidden Markov Model
+    Methods: Traditional or Statistics algorithms. For example:
+        1. First order logic
+        2. Bayesian theory and Naive Bayes classifier.
+        3. Markov Chain
+        4. Hidden Markov Model
 
 Inductive learning: From examples or activities to lead to generalized rules. It may arrive at incorrect conclusions.
     Pros:
@@ -75,7 +76,8 @@ Inductive learning: From examples or activities to lead to generalized rules. It
     Cons:
         1. Local optimals rather than global optimal.
         2. Overfitting issues.
-
+    Methods:
+        1. Artificial Neural Network
 
 
 
