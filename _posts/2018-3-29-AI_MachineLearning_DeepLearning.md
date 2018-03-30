@@ -66,9 +66,7 @@ Deductive learning: From Generalized rules to lead to correct knowledge.
         1. We often have insufficient knowledge for inference.
     Methods: Traditional or Statistics algorithms. For example:
         1. First order logic
-        2. Bayesian theory and Naive Bayes classifier.
-        3. Markov Chain
-        4. Hidden Markov Model
+        2. Bayesian theory.
 
 Inductive learning: From examples or activities to lead to generalized rules. It may arrive at incorrect conclusions.
     Pros:
