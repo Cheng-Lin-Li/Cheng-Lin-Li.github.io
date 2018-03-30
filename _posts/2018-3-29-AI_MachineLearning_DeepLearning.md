@@ -4,7 +4,12 @@ title: What is the difference between AI, Machine Learning, and Deep Learning?
 ---
 
 ![AI, machine learning, deep learning, and others](/images/2018-03-29-AI.svg)
-### Artificial Intelligence (A.I.)
+
+Deep learning ⊂ Machine learning ⊂ Artificial 
+
+In one sentence, deep learning is a subset of machine learning in Artificial Intelligence (AI).
+
+### Artificial Intelligence (AI)
 
 What is Artificial Intelligence ?
 
@@ -73,6 +78,9 @@ Inductive learning: From examples or activities to lead to generalized rules. It
 
 
 ### Deep Learning
+Deep learning is a subset of machine learning.
+
+Deep learning focus on multiple (deep) layer of Artificial Neural Network(ANN) with different combinations.
 
 
 Reference:
