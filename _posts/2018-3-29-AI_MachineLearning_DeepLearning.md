@@ -40,14 +40,15 @@ Traditionally, four approaches to define A.I.:
     One important thing is that achieving perfect rationality—always doing the right thing—may be not feasible in complicated environments due to long time computations, the issue of limited rationality—acting appropriately when there is not enough time to do all the computations should be considered in this approach.
 
 Below areas are foundations of A.I.:
-    1. Philosophy
-    2. Mathematics
-    3. Economics
-    4. Neuroscience
-    5. Psychology
-    6. Computer engineering
-    7. Control theory and cybernetics
-    8. Linguistics
+
+1. Philosophy
+2. Mathematics
+3. Economics
+4. Neuroscience
+5. Psychology
+6. Computer engineering
+7. Control theory and cybernetics
+8. Linguistics
 
 ### Machine Learning
 
