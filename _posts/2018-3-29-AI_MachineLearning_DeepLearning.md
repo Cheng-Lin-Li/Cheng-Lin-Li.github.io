@@ -56,32 +56,54 @@ about the world.
 
 Two categories to aggregate machine learning algorithms:
 
-Deductive learning: From Generalized rules to lead to correct knowledge.
+1. Deductive learning: From Generalized rules to lead to correct knowledge.
     Pros:
         1. Logical inference generates entailed statements.
         2. Probabilistic reasoning can lead to updated belief states.
     Cons:
         1. We often have insufficient knowledge for inference.
-    Methods: Traditional or Statistics algorithms. For example:
-        1. First order logic
-        2. Bayesian theory.
 
-Inductive learning: From examples or activities to lead to generalized rules. It may arrive at incorrect conclusions.
+2. Inductive learning: From examples or activities to lead to generalized rules. It may arrive at incorrect conclusions.
     Pros:
         1. The learning can be better than not trying to learn at all.
     Cons:
         1. Local optimals rather than global optimal.
         2. Overfitting issues.
-    Methods:
-        1. Artificial Neural Network
 
+If you want to split machine learning into three types types of learning, that will be supervised learning, unsupervised learning, and reinforcement learning. 
+
+1. Supervised Learning: Algorithms find a solution based on labeled sample data.
+
+    All regression tasks and most of classifications rely on labeled data to feed into algorithms. For example, machine can classify cat, dog, car, ... from an image after trained by thousands of labeled images.
+
+2. Unsupervised Learning: Algorithms give an answer based on unlabeled data.
+
+    How algorithm can learn knowledge from "unlabeled" data? Basically this kind of algorithms perform classification tasks which clusters data into different sets(or groups) based on "distance" of features from each data. Clustering and Dimensionality reduction algorithms rely on unsupervised learning.
+
+    Is unsupervised learning useful? Of course it is. For instance, you search from google by some key words to get tones of websites is based on unsupervised learning algorithm.
+
+3. Reinforcement Learning: Algorithms based on long-term rewards to learn the rules/answers.
+
+    You may not know reinforcement learning approach, but you definitely heart about AlphGo beats human champaign in 2017. Yes, it is reinforcement learning explore new approaches to play games.
+
+    Given reward functions and the environment’s states, the agent will choose the action to maximize rewards or explore new possibilities.
 
 
 ### Deep Learning
 Deep learning is a subset of machine learning.
 
-Deep learning focus on multiple (deep) layer of Artificial Neural Network(ANN) with different combinations.
+Deep learning focus on multiple (deep) layer of Artificial Neural Network(ANN) with different combinations. This kind of algorithms dominate computer vision, sound recognition, machine translations...etc.
 
+Scientists construct different architectures of connections between different activation functions (to simulate the behavior of neurons) which actually project data from original question space to a new solution space to solve it (find the answer).
+
+These algorithm split all inputs (image, voice, text) into high dimensional matrix of numbers to compute them. Those matrix operations will take a lot of time and computing powers on CPU. Because the powerful graphics processing unit (GPU) was developed in recently years, it helps deep learning to be practicable and reveal the power of these algorithms.
+
+The research competition in this area is not only related to algorithm design but also computing power. You don't want to wait for 1 weeks to see the result of experiments. That's why GPU card (or high-end graphic card) is very important for machine learning researchers today.
+
+I don't have a GPU card, how can I do for deep learning research? The good news is Google provides a free (so far) GPU developing enviroment call [Google Colaboratory] for you with some limitations. You may [click here to try it](https://colab.research.google.com/notebooks/welcome.ipynb#recent=true) or [click here for more detail](https://research.google.com/colaboratory/faq.html#browsers).
+
+#### Revised on April, 1, 2018 for machine learning and deep learning.
 
 ### Reference:
 1. Stuart Russel, Peter Norvig, Artificial Intelligence - A Mordern Approach, Third Edition.
+
