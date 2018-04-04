@@ -3,7 +3,7 @@ layout: post
 title: How to setup Google Colaboratory to get free GPU and integrate with Google drive?
 ---
 
-[You can download my Colaboratory Notebook template](https://github.com/Cheng-Lin-Li/Cheng-Lin-Li.github.io/blob/master/resources/2018-04-04/GoogleColaboratoryNotebookTemplate.ipynb) if you want.
+[You can view my Colaboratory Notebook template with steps from here](https://github.com/Cheng-Lin-Li/Cheng-Lin-Li.github.io/blob/master/resources/2018-04-04/GoogleColaboratoryNotebookTemplate.ipynb) or you want to [download this template directly]((https://github.com/Cheng-Lin-Li/Cheng-Lin-Li.github.io/raw/master/resources/2018-04-04/GoogleColaboratoryNotebookTemplate.ipynb)).
 
 This documentation is focus on some tips by my personal experience to share with others who just want to start their trials. 
 
