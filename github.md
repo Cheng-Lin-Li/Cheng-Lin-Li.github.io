@@ -17,4 +17,4 @@ There are several GitHub repositories below for your reference as first step. I 
 
 [ >>Knowledge Graph<< ](https://cheng-lin-li.github.io/KnowledgeGraph/) include utilities programs like JSONLines package program, facebook crawler, information extraction, and a final project to combine all those techniques and machine learning algorithm to predict the trend of Dow Jones Industrial Average (DJIA) in next day and next 30 day.
 
-[ >>Neural Language Processing<< ](https://cheng-lin-li.github.io/Natural-Language-Processing/) include tagging program based on HMM-Viterbi with add one smoothing for transition probability, Good Turing smoothing / rule base algorithm for unknown words. (under constructing).
+[ >>Neural Language Processing<< ](https://cheng-lin-li.github.io/Natural-Language-Processing/) include tagging program based on HMM-Viterbi with add one smoothing for transition probability, Good Turing smoothing / rule base algorithm for unknown words, Naive Bayes classifier for sentiment analysis of reviews. (under constructing).
