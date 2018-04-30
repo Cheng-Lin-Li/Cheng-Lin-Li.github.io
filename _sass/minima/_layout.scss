@@ -30,12 +30,6 @@
   height: 70px;
   margin-right: 15px;
 
-  @include mobile {
-    float: none;
-    display: block;
-    margin: 0 auto;
-  }
-
   img {
     border-radius: 5px;
   }
@@ -79,7 +73,7 @@
       }
     }
   } 
-  
+
   @include media-query($on-palm) {
     position: absolute;
     top: 9px;
