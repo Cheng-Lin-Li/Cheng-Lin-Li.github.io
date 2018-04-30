@@ -1,86 +1,56 @@
-#
-# This file contains configuration flags to customize your site
-#
+title: Data Scientist and AI Notebook
+author: Cheng-Lin Li
+email: your-email@domain.com
+description: > # this means to ignore newlines until "twitter_username:"
+  This is my Blog for Data Scientist Notebook which includes Artificial Intelligence, Machine Learning, Natural Language Processing, Knowledge Graphs, Information Visualization, and Data Mining.
 
-# Name of your site (displayed in the header)
-name: Cheng-Lin Li
+# social links
+# twitter_username: jekyllrb
+github_username:  Cheng-Lin-Li
+# rss: rss
+# dribbble_username: jekyll
+facebook_username: clark.cl.li
+# flickr_username: jekyll
+# instagram_username: jekyll
+linkedin_username: chenglin-li
+# pinterest_username: jekyll
+# youtube_username: jekyll
+# googleplus_username: +jekyll
 
-# Short bio or description (displayed in the header)
-description: My Blog for Data Scientist Notebook
-
-# URL of your avatar or profile pic (you could use your GitHub profile pic)
-avatar: https://avatars0.githubusercontent.com/u/25485429?s=400&amp;u=ace46367d209eed60aa2b1253230bb3a9c1fdd0d&amp;v=4
-
-#
-# Flags below are optional
-#
-
-# Includes an icon in the footer for each username you enter
-footer-links:
-  dribbble:
-  email: clark.cl.li@gmail.com
-  facebook: clark.cl.li
-  flickr: 
-  github: Cheng-Lin-Li
-  instagram:
-  linkedin: chenglin-li
-  pinterest:
-  rss: # just type anything here for a working RSS icon
-  twitter: 
-  stackoverflow: # your stackoverflow profile, e.g. "users/50476/bart-kiers"
-  youtube: # channel/<your_long_string> or user/<user-name>
-  googleplus: # anything in your profile username that comes after plus.google.com/
+# Mastodon instances
+# mastodon:
+# - username: jekyll
+#   instance: example.com
+# - username: jekyll2
+#   instance: example.com
 
 
 # Enter your Disqus shortname (not your username) to enable commenting on posts
 # You can find your shortname on the Settings page of your Disqus account
-disqus: cheng-lin-li
+disqus:
+  shortname: cheng-lin-li
 
 # Enter your Google Analytics web tracking code (e.g. UA-2110908-2) to activate tracking
 google_analytics: UA-116280074-1
 
-# Your website URL (e.g. http://barryclark.github.io or http://www.barryclark.co)
-# Used for Sitemap.xml and your RSS feed
-url: https://cheng-lin-li.github.io/
+show_excerpts: true # set to true to show excerpts on the homepage
 
-# If you're hosting your site at a Project repository on GitHub pages
-# (http://yourusername.github.io/repository-name)
-# and NOT your User repository (http://yourusername.github.io)
-# then add in the baseurl here, like this: "/repository-name"
-baseurl: ""
+# Minima date format
+# refer to http://shopify.github.io/liquid/filters/date/ if you want to customize this
+minima:
+  date_format: "%b %-d, %Y"
 
-#
-# !! You don't need to change any of the configuration flags below !!
-#
+# If you want to link only specific pages in your header, uncomment
+# this and add the path to the pages in order as they should show up
+header_pages:
+- Github
+- project.html
+- about.html
 
-permalink: /:title/
 
-# The release of Jekyll Now that you're using
-version: v1.2.0
+# Build settings
+theme: minima
 
-# Jekyll 3 now only supports Kramdown for Markdown
-kramdown:
-  # Use GitHub flavored markdown, including triple backtick fenced code blocks
-  input: GFM
-  # Jekyll 3 and GitHub Pages now only support rouge for syntax highlighting
-  syntax_highlighter: rouge
-  syntax_highlighter_opts:
-    # Use existing pygments syntax highlighting css
-    css_class: 'highlight'
-
-# Set the Sass partials directory, as we're using @imports
-sass:
-  style: :expanded # You might prefer to minify using :compressed
-
-# Use the following plug-ins
-gems:
-  - jekyll-sitemap # Create a sitemap using the official Jekyll sitemap gem
-  - jekyll-feed # Create an Atom feed using the official Jekyll feed gem
-
-# Exclude these files from your production _site
-exclude:
-  - Gemfile
-  - Gemfile.lock
-  - LICENSE
-  - README.md
-  - CNAME
+plugins:
+ - jekyll-feed
+ - jekyll-seo-tag
