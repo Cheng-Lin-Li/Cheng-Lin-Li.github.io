@@ -1,6 +1,6 @@
 ---
 layout: post
-title: What is the difference between AI, Machine Learning, and Deep Learning?
+title: What are differences between AI, Machine Learning, and Deep Learning?
 tags: ai machine-learning deep-learning
 ---
 
