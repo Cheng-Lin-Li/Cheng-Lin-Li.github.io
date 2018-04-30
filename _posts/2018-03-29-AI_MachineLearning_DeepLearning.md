@@ -10,14 +10,17 @@ Deep learning ⊂ Machine learning ⊂ Artificial Intelligence
 
 In one sentence, deep learning is a subset of machine learning in Artificial Intelligence (AI).
 
+
+<!--more-->
+
 {: class="table-of-content"}
 * TOC
 {:toc}
 
-{: class="info"}
-### Artificial Intelligence (AI)
 
-What is Artificial Intelligence ?
+## Artificial Intelligence (AI)
+
+### What is Artificial Intelligence ?
 
 According to the definition of Association for the Advancement of Artificial Intelligence (AAAI):
 
@@ -56,12 +59,13 @@ Below areas are foundations of A.I.:
 7. Control theory and cybernetics
 8. Linguistics
 
-### Machine Learning
+## Machine Learning
 
-Machine learning is a subset of AI that gives an agent the ability to "learn" (i.e., progressively improve performance on a specific task) with data, without being explicitly programmed. An agent is learning if it improves its performance on future tasks after making observations
-about the world.
+### Machine learning is a subset of AI 
 
-Two categories to aggregate machine learning algorithms:
+Machine Learning gives an agent the ability to "learn" (i.e., progressively improve performance on a specific task) with data, without being explicitly programmed. An agent is learning if it improves its performance on future tasks after making observations about the world.
+
+#### Two categories to aggregate machine learning algorithms:
 
 1. Deductive learning: From Generalized rules to lead to correct knowledge.
     Pros:
@@ -77,6 +81,7 @@ Two categories to aggregate machine learning algorithms:
         1. Local optimals rather than global optimal.
         2. Overfitting issues.
 
+#### Three types of machine learning algorithms:
 If you want to split machine learning into three types types of learning, that will be supervised learning, unsupervised learning, and reinforcement learning. 
 
 1. Supervised Learning: Algorithms find a solution based on labeled sample data.
@@ -96,8 +101,9 @@ If you want to split machine learning into three types types of learning, that w
     Given reward functions and the environment’s states, the agent will choose the action to maximize rewards or explore new possibilities.
 
 
-### Deep Learning
-Deep learning is a subset of machine learning.
+## Deep Learning
+
+### Deep learning is a subset of machine learning.
 
 Deep learning focus on multiple (deep) layer of Artificial Neural Network(ANN) with different combinations. This kind of algorithms dominate computer vision, sound recognition, machine translations...etc.
 
@@ -111,6 +117,6 @@ I don't have a GPU card, how can I do for deep learning research? The good news 
 
 #### Revised on April, 1, 2018 for machine learning and deep learning.
 
-### Reference:
+## Reference:
 1. Stuart Russel, Peter Norvig, Artificial Intelligence - A Mordern Approach, Third Edition.
 
