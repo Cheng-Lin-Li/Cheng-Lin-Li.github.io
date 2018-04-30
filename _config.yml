@@ -4,6 +4,9 @@ email: clark.cl.li@gmail.com
 description: > # this means to ignore newlines until "twitter_username:"
   This is my Blog for Data Scientist Notebook which includes Artificial Intelligence, Machine Learning, Natural Language Processing, Knowledge Graphs, Information Visualization, and Data Mining.
 
+  # URL of your avatar or profile pic (you could use your GitHub profile pic)
+avatar: https://avatars0.githubusercontent.com/u/25485429?s=400&amp;u=ace46367d209eed60aa2b1253230bb3a9c1fdd0d&amp;v=4
+
 # social links
 # twitter_username: jekyllrb
 github_username:  Cheng-Lin-Li
