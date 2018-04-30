@@ -10,6 +10,11 @@ Deep learning ⊂ Machine learning ⊂ Artificial Intelligence
 
 In one sentence, deep learning is a subset of machine learning in Artificial Intelligence (AI).
 
+{: class="table-of-content"}
+* TOC
+{:toc}
+
+{: class="info"}
 ### Artificial Intelligence (AI)
 
 What is Artificial Intelligence ?
