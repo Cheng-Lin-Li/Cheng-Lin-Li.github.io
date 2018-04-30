@@ -6,7 +6,7 @@ tags: AI Machine Learning Deep Learning
 
 ![AI, machine learning, deep learning, and others](/images/2018-03-29-AI.svg)
 
-Deep learning ⊂ Machine learning ⊂ Artificial 
+Deep learning ⊂ Machine learning ⊂ Artificial Intelligence 
 
 In one sentence, deep learning is a subset of machine learning in Artificial Intelligence (AI).
 
