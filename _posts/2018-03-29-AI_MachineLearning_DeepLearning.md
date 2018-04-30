@@ -11,12 +11,14 @@ Deep learning ⊂ Machine learning ⊂ Artificial Intelligence
 In one sentence, deep learning is a subset of machine learning in Artificial Intelligence (AI).
 
 
-<!--more-->
+---
+Table of content:
 
 {: class="table-of-content"}
 * TOC
 {:toc}
 
+---
 
 ## Artificial Intelligence (AI)
 
@@ -115,8 +117,10 @@ The research competition in this area is not only related to algorithm design bu
 
 I don't have a GPU card, how can I do for deep learning research? The good news is Google provides a free (so far) GPU developing enviroment call [Google Colaboratory] for you with some limitations. You may [click here to try it](https://colab.research.google.com/notebooks/welcome.ipynb#recent=true) or [click here for more detail](https://research.google.com/colaboratory/faq.html#browsers).
 
-#### Revised on April, 1, 2018 for machine learning and deep learning.
 
 ## Reference:
 1. Stuart Russel, Peter Norvig, Artificial Intelligence - A Mordern Approach, Third Edition.
 
+
+Revised on April, 1, 2018 for machine learning and deep learning.
+Revised on April, 30, 2018 to include table of content.
