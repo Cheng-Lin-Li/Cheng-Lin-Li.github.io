@@ -48,12 +48,16 @@ That's the reason why your notebook cannot read your data files which locate on 
 
 ### Cons (as of today)
 1. Limited resource.
-> Only around 12GB free Memory for you. In most of cases you will run out of memory in training a deep learning model with huge data set.
-> 50GB Hard drive space.
-> Provide one core of Intel(R) Xeon(R) CPU @ 2.30GHz.
+> a. Only around 12GB free Memory for you. In most of cases you will run out of memory in training a deep learning model with huge data set.
+>
+> b. 50GB Hard drive space.
+>
+> c. Provide one core of Intel(R) Xeon(R) CPU @ 2.30GHz.
+
 2. Connection time is limited for 12 hours.
 > You can use GPU as a back-end for 12 hours at a time. The connection will lost and Google will relaunch your notebook in a NEW virtual machine environment for next 12 hours. So all your data which stores in previous virtual machine is gone if you do not dump your model parameters into local and copy to Google driver.
-3. Unstable
+
+3. Unstable on the huge task
 > Sometimes, the notebook just dies during the training. There may be many underlying causes for this, but out of memory is the major reason in my cases.
 
 ## How can we create a Google Colaboratory notebook?
@@ -67,7 +71,7 @@ Now it's time to create your Google Colaboratory by right click on the folder, t
 3. Enable GPU. Follow Edit > Notebook settings>Change runtime type (or Runtime > Change runtime type) then select GPU as Hardware accelerator.
 ![Enable GPU](https://cheng-lin-li.github.io/images/2018-04-04/enable_gpu.png)
 
-## How does it work with google drive?
+## How does it work with Google drive?
 If you want to maximally leverage the benefit from the platform, you will need to create a local mount point folder on your virtual machine of the notebook and map the folder to a correspond folder on Google drive.
 
 Here is the sample procedures.
@@ -98,7 +102,7 @@ vcode = getpass.getpass()
 At the end of result, you will need to click a link to launch a new page to get a token string, copy the string and paste into the blank field in the notebook, click enter and repeat the procedure again to grant second privilege.
 
 
-### Mount google drive into virtual machine of Colaboratory.
+### Mount Google drive into virtual machine of Colaboratory.
 Assume you create a folder "workspace" on your Google drive.
 Below script will create a /drive/workspace folder which is located on Google drive on your virtual machine of notebook, then copy all data files in workspace folder of Google drive to the home directory of virtual machine for your next tasks.
 
