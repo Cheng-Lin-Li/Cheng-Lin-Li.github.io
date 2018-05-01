@@ -4,6 +4,8 @@ title: How to setup Google Colaboratory to get free GPU and integrate with Googl
 tags: utility
 ---
 
+![Google Colaboratory](/images/2018-03-29-AI.svg)
+
 [You can view my Colaboratory Notebook template with steps from here](https://github.com/Cheng-Lin-Li/Cheng-Lin-Li.github.io/blob/master/resources/2018-04-04/GoogleColaboratoryNotebookTemplate.ipynb) or you want to [download this google colaboratory notebook template directly](https://cdn.rawgit.com/Cheng-Lin-Li/Cheng-Lin-Li.github.io/master/resources/2018-04-04/GoogleColaboratoryNotebookTemplate.ipynb).
 
 An interesting toy for the new learner of machine learning.
@@ -25,14 +27,14 @@ Table of content:
 ### High dimensional computions are major operations in deep learning models.
 
 ## What is Google Colaboratory?
-
+Google Colaboratory is a free cloud service with GPU.
 
 ## How does it works?
 
 
 ### Pros
 1. The GPU resource is free.
-2. The environment is well integrated with major machine learning packages.
+2. The environment is well integrated with popular machine learning libraries.
 
 
 ### Cons
