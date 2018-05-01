@@ -1,16 +1,30 @@
 ---
 layout: post
 title: Hello Data !!
+tags: ai machine-learning nlp
 ---
+
+<!-- more -->
+
+---
+Table of content:
+
+{: class="table-of-content"}
+* TOC
+{:toc}
+
+---
+
+## What is the major focus of this blog?
 
 This is my learning notebook which includes AI, Machine Learning, Big Data techniques, Knowledge Graph, Information Visualization and Natural Language Processing.
 
-I am a lifelong learner and passinate to contribute my knowledge to impact the world. After twenty years dedicate working on IT Application development departments for Intranet, B2C, B2B eCommerce portal and trading Websites, I observed the A.I. and DATA era is coming. It is time to let DATA tell its story by A.I. / machine learning algorithms and that's the reason why I resigned from J.P. Morgan Asset Management (Taiwan) in 2016 and went back to school to be a graduate student in Viterbi school of engineering at University of Southern California. My research area is data informatics and I would like to share what I learn with everyone.
+I am a lifelong learner and passionate to contribute my knowledge to impact the world. After twenty years dedicate working on IT Application development departments for Intranet, B2C, B2B eCommerce portal and trading Websites, I observed the A.I. and DATA era is coming. It is time to let DATA tell its story by A.I. / machine learning algorithms and that's the reason why I resigned from J.P. Morgan Asset Management (Taiwan) in 2016 and went back to school to be a graduate student in Viterbi school of engineering at University of Southern California. My research area is data informatics and I would like to share what I learn with everyone.
 
 I will leverage my spare time to enrich this notebook style blog from time to time. Your comments are appreciated.
 
 ---
-### Reference material:
+## Reference material:
 
 ### Artificial intelligence (AI)
 
@@ -62,7 +76,8 @@ Training Material and Courses:
 
 ---
 
-### Some Technology notes are drafted here, I may write articles for them in the future.
+## General topics
+> I leave some Technology notes in this section. I may write articles for each of them in the future.
 
 #### Parametric vs. Nonparametric Methods.
 ##### reference:
