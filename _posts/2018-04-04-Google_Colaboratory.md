@@ -30,12 +30,12 @@ Table of content:
 ## How does it works?
 
 
-### Pro
+### Pros
 1. The GPU resource is free.
 2. The environment is well integrated with major machine learning packages.
 
 
-### Con
+### Cons
 1. RAM is limited.
 2. Connection time is limited.
 
@@ -55,6 +55,6 @@ Table of content:
 
 The document is still under constructing, you may refer below comprehensive reference for details.
 
-### Reference:
+## Reference:
 1. fuat, [Google Colab Free GPU Tutorial](https://medium.com/deep-learning-turkey/google-colab-free-gpu-tutorial-e113627b9f5d).
 
