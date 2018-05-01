@@ -4,7 +4,7 @@ title: How to setup Google Colaboratory to get free GPU and integrate with Googl
 tags: utility
 ---
 
-![Google Colaboratory](/images/2018-03-29-AI.svg)
+![Google Colaboratory](/images/2018-04-04.svg)
 
 [You can view my Colaboratory Notebook template with steps from here](https://github.com/Cheng-Lin-Li/Cheng-Lin-Li.github.io/blob/master/resources/2018-04-04/GoogleColaboratoryNotebookTemplate.ipynb) or you want to [download this google colaboratory notebook template directly](https://cdn.rawgit.com/Cheng-Lin-Li/Cheng-Lin-Li.github.io/master/resources/2018-04-04/GoogleColaboratoryNotebookTemplate.ipynb).
 
@@ -24,12 +24,16 @@ Table of content:
 ---
 
 ## Why do we need GPU?
+
 ### High dimensional computions are major operations in deep learning models.
+
+Deep learning heavily rely on GPU to speed up high dimensional computations. You may only need 20 minutes to train a model with GPU but the same task may take 2 hours on pure CPU computing power.
 
 ## What is Google Colaboratory?
 Google Colaboratory is a free cloud service with GPU.
 
 ## How does it works?
+You may refer the diagram.
 
 
 ### Pros
