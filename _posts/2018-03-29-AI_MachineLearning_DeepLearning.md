@@ -120,7 +120,10 @@ I don't have a GPU card, how can I do for deep learning research? The good news 
 
 
 ## Reference:
-1. Stuart Russel, Peter Norvig, Artificial Intelligence - A Mordern Approach, Third Edition.
+1. [Stuart Russel, Peter Norvig, Artificial Intelligence - A Mordern Approach, Third Edition.](http://aima.cs.berkeley.edu/)
+2. [Trevor Hastie, Robert Tibshirani, Jerome Friedman, The Elements of Statistical Learning - Data Mining,Inference,and Prediction](https://web.stanford.edu/~hastie/Papers/ESLII.pdf)
+3. [Christopher Bishop, Pattern Recognition and Machine Learning](https://www.springer.com/us/book/9780387310732)
+3. [Ian Goodfellow and Yoshua Bengio and Aaron Courville, Deep Learning](http://www.deeplearningbook.org/)
 
 
 Revised on April, 1, 2018 for machine learning and deep learning.
