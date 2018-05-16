@@ -30,7 +30,7 @@ How to start a project in machine learning? How can I leverage all those techniq
       
       Build up a web application to introduce what business cycle is and how it will impact to us.
 
-      Project live demo site:[Business Cycle Introduction](http://www-scf.usc.edu/~chenglil/business_cycle/)
+      Project live demo site:[Business Cycle Introduction](https://cheng-lin-li.github.io/assets/InformationVisualization/BusinessCycle/dist/index.html)
 
       Github address: [https://github.com/Cheng-Lin-Li/InformationVisualization/tree/master/BusinessCycle](https://github.com/Cheng-Lin-Li/InformationVisualization/tree/master/BusinessCycle)
 
