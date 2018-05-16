@@ -2,12 +2,12 @@
 
 ##  Present Rural population (% of total population) data for 20 countries in 2016 by a stem-and-leaf plot, a bar chart, and a scatterplot:
 
-* [The html result](http://www-scf.usc.edu/~chenglil/v1.1/a5.html) 
+* [The Demo website](https://cheng-lin-li.github.io/assets/InformationVisualization/D3_databinding/a5.html) 
 
 If the website can not be accessed, please download all contents under this folder to view it on your local machine.
 
 ## HTML, Javascript, and CSS:
-* [The html file](https://github.com/Cheng-Lin-Li/InformationVisualization/blob/master/D3_databinding/a5.html)
+* Click [ **Here for the Demo website** ](https://github.com/Cheng-Lin-Li/InformationVisualization/blob/master/D3_databinding/a5.html)
 
 * [The Javascript of table](https://github.com/Cheng-Lin-Li/InformationVisualization/blob/master/D3_databinding/data_table.js)
 
