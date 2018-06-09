@@ -4,11 +4,11 @@ title: About
 permalink: /about/
 ---
 
-Cheng-Lin (Clark) Li owned his Master’s Degree with research area on Data Informatics in Viterbi School of Engineering at University of Southern California (USC). My professional interests include A.I. especially in machine learning, natural language processing with data.
+My name is Cheng-Lin (Clark) Li. I received my Master of Scientist in Viterbi School of Engineering from University of Southern California (USC) on May 11, 2018. My research areas focus on data informatics especially in A.I., machine learning, natural language processing with big data.
 
 ### More Information
 
-I am a data scientist, machine learning engineer, proven lifelong learner, enabler from abstract concepts to business actions. This is my blog to discuss A.I., machine learning, natural language processing, knowledge graphs, information visualization and big data.
+I am a data scientist, machine learning engineer, proven lifelong learner, enabler from abstract concepts to business actions. This is my blog to discuss A.I., machine learning, natural language processing, knowledge graphs, information visualization and data mining.
 
 I am available on the data scientist, machine learning engineer job market. You can review my proven records on [LinkedIn page](https://www.linkedin.com/in/chenglin-li/).
 
