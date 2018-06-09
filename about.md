@@ -4,7 +4,7 @@ title: About
 permalink: /about/
 ---
 
-I was graduated from my Master’s Degree in Data Informatics, Viterbi School of Engineering at University of Southern California (USC). My professional interests include A.I. especially in machine learning, natural language processing with data.
+Cheng-Lin (Clark) Li owned his Master’s Degree with research area on Data Informatics in Viterbi School of Engineering at University of Southern California (USC). My professional interests include A.I. especially in machine learning, natural language processing with data.
 
 ### More Information
 
