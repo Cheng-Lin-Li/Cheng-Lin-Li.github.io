@@ -237,7 +237,7 @@ ___
 	SMAPE is the forecast minus actuals divided by the sum of forecasts and actuals as expressed in formula:
   
 
-> $$SMAPE = \frac{2}{N} * \sum_{k=1}^N\frac{\vertF_k-A_k\vert}/(F_k+A_k)}$$
+>$$SMAPE = \frac{2}{N} * \sum_{k=1}^N\frac{\vert F_k-A_k\vert}/(F_k+A_k)}$$
 >
 >k = each time period.
 
@@ -250,7 +250,7 @@ Mean Absolute Percent Error (MAPE) is the most common measure of forecast error.
 With zeros or near-zeros, MAPE can give a distorted picture of error. The error on a near-zero item can be infinitely high, causing a distortion to the overall error rate when it is averaged in. For forecasts of items that are near or at zero volume, Symmetric Mean Absolute Percent Error (SMAPE) is a better measure.
 	MAPE is the average absolute percent error for each time period or forecast minus actuals divided by actuals:
 
-> $$MAPE = \frac{1}{N} * \sum_{k=1}^N\frac{\vertF_k-A_k\vert}{A_k}$$
+> $$MAPE = \frac{1}{N} * \sum_{k=1}^N\frac{\vert F_k-A_k\vert}{A_k}$$
 >
 >k = each time period.
 
@@ -263,9 +263,9 @@ With zeros or near-zeros, MAPE can give a distorted picture of error. The error 
 	
   Maximum Likelihood Estimation (MLE) and Maximum A Posteriori (MAP), are both a method for estimating some variable in the setting of probability distributions or graphical models. They are similar, as they compute a single estimate, instead of a full distribution.
 	Maximum Likelihood estimation (MLE): Choose value that maximizes the probability of observed data.
-	$$Cap Theta_MLE=argmax_(Theta)P(D\vertTheta)$$
+	$$Cap Theta_MLE=argmax_(Theta)P(D\vert Theta)$$
 	Maximum a posteriori(MAP) estimation: Choose value that is most probable given observed data and prior belief.
-	$$Cap Theta_MAP=argmax_(Theta)P(Theta\vertD)=argmax_(Theta)P(D\vertTheta)*P(Theta)$$
+	$$Cap Theta_MAP=argmax_(Theta)P(Theta\vert D)=argmax_(Theta)P(D\vert Theta)*P(Theta)$$
 	What we could conclude then, is that MLE is a special case of MAP, where the prior probability is uniform (the same everywhere)!
 
 ---
@@ -321,9 +321,9 @@ Given a measure η, we deﬁne an exponential family of probability distribution
 
 The KL divergence from  y^(or Q, your observation)  to  y (or P, ground truth)  is simply the difference between cross entropy and entropy:
 
-$$ KL(y || \hat{y}=\sum_iy_ilog\frac{1}{hat{y}_i}−\sum_iy_ilog\frac{1}{y_i}=\sum_iy_ilog\frac{y_i}{\hat{y}_i} $$
+$$ KL(y || \hat{y})=\sum_iy_ilog\frac{1}{hat{y}_i}−\sum_iy_ilog\frac{1}{y_i}=\sum_iy_ilog\frac{y_i}{\hat{y}_i} $$
 
-In the context of machine learning, $$KL(P||Q)$$ is often called the information gain achieved if Q is used instead of P. By analogy with information theory, it is also called the relative entropy of P with respect to Q.
+In the context of machine learning, $$KL(P\vert\vert Q)$$ is often called the information gain achieved if Q is used instead of P. By analogy with information theory, it is also called the relative entropy of P with respect to Q.
 
 ---
 
