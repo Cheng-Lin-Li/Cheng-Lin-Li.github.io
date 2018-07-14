@@ -192,15 +192,17 @@ Ensemble methods are meta-algorithms which combine several machine learning tech
 2. [https://jamesmccaffrey.wordpress.com/2017/06/21/neural-network-glorot-initialization/](https://jamesmccaffrey.wordpress.com/2017/06/21/neural-network-glorot-initialization/)
 
 Glorot initialization: it helps signals reach deep into the network.
-	a. If the weights in a network start too small, then the signal shrinks as it passes through each layer until it’s too tiny to be useful.
-	b. If the weights in a network start too large, then the signal grows as it passes through each layer until it’s too massive to be useful.
+	
+  a. If the weights in a network start too small, then the signal shrinks as it passes through each layer until it’s too tiny to be useful.
+	
+  b. If the weights in a network start too large, then the signal grows as it passes through each layer until it’s too massive to be useful.
 
-Formular: $$Var(W) = 1/n_in$$
+Formular: $$Var(W) = 1/n_(in)$$
 
 where W is the initialization distribution for the neuron in question, and n_in is the number of neurons feeding into it. The distribution used is typically Gaussian or uniform.
 
 It’s worth mentioning that Glorot & Bengio’s paper originally recommended using: 
-	$$Var(W) = 2/(n_in+n_out)$$
+	$$Var(W) = 2/(n_(in)+n_(out))$$
 	where $$n_out$$ is the number of neurons the result is fed to.
 
 ####  He initialization: For the more recent rectifying nonlinearities (ReLu)
