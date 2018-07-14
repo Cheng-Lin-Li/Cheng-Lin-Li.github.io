@@ -197,19 +197,19 @@ Glorot initialization: it helps signals reach deep into the network.
 	
   b. If the weights in a network start too large, then the signal grows as it passes through each layer until it’s too massive to be useful.
 
-Formular: $$Var(W) = 1/n_(in)$$
+Formular: $$Var(W) = \frac{1}{n_{in}}$$
 
 where W is the initialization distribution for the neuron in question, and n_in is the number of neurons feeding into it. The distribution used is typically Gaussian or uniform.
 
 It’s worth mentioning that Glorot & Bengio’s paper originally recommended using: 
-	$$Var(W) = 2/(n_(in)+n_(out))$$
-	where $$n_out$$ is the number of neurons the result is fed to.
+	$$Var(W) = \frac{2}{(n_{in}+n_{out})}$$
+	where $$n_{out}$$ is the number of neurons the result is fed to.
 
 ####  He initialization: For the more recent rectifying nonlinearities (ReLu)
 ##### References:
 1. [https://arxiv.org/abs/1502.01852](https://arxiv.org/abs/1502.01852)
 
-Formular: $$Var(W) = 2/n_in$$
+Formular: $$Var(W) = \frac{2}{n_{in}}$$
 
 Which makes sense: a rectifying linear unit is zero for half of its input, so you need to double the size of weight variance to keep the signal’s variance constant.
 
