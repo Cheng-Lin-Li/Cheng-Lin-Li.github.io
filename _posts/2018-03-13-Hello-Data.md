@@ -282,7 +282,7 @@ With zeros or near-zeros, MAPE can give a distorted picture of error. The error 
 
 Given a measure η, we deﬁne an exponential family of probability distributions as those distributions whose density (relative to η) have the following general form: 
 
-> $$ p(x|η) = h(x)e^{η^T . T(x) − A(η)} $$
+> $$ p(x\vert η) = h(x)e^{η^T . T(x) − A(η)} $$
 
 >Key point: x and η only “mix” in $$exp^{(η^T . T(x))}$$
 
@@ -305,7 +305,7 @@ Given a measure η, we deﬁne an exponential family of probability distribution
   The generalized linear model (GLM) is a powerful generalization of linear regression to more general exponential family. The model is based on the following assumptions:
 
 1. The observed input enters the model through a linear function $$(β^T X)$$.
-2. The conditional mean of response, is represented as a function of the linear combination: $$E[Y\vertX]$$ is defined as $$µ = f(β^T.X)$$. 
+2. The conditional mean of response, is represented as a function of the linear combination: $$E[Y\vert X]$$ is defined as $$µ = f(β^T.X)$$. 
 3. The observed response is drawn from an exponential family distribution with conditional mean µ.
 
   η = Ψ(µ)
@@ -321,7 +321,7 @@ Given a measure η, we deﬁne an exponential family of probability distribution
 
 The KL divergence from  y^(or Q, your observation)  to  y (or P, ground truth)  is simply the difference between cross entropy and entropy:
 
-$$ KL(y || \hat{y})=\sum_iy_ilog\frac{1}{hat{y}_i}−\sum_iy_ilog\frac{1}{y_i}=\sum_iy_ilog\frac{y_i}{\hat{y}_i} $$
+$$ KL(y \vert\vert \hat{y})=\sum_iy_ilog\frac{1}{\hat{y}_i}−\sum_iy_ilog\frac{1}{y_i}=\sum_iy_ilog\frac{y_i}{\hat{y}_i} $$
 
 In the context of machine learning, $$KL(P\vert\vert Q)$$ is often called the information gain achieved if Q is used instead of P. By analogy with information theory, it is also called the relative entropy of P with respect to Q.
 
