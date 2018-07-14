@@ -279,7 +279,7 @@ With zeros or near-zeros, MAPE can give a distorted picture of error. The error 
 
 Given a measure η, we deﬁne an exponential family of probability distributions as those distributions whose density (relative to η) have the following general form: 
 
->p(x|η) = h(x)exp{ηT . T(x) − A(η)}
+> $$ p(x\|η) = h(x)exp{ηT . T(x) − A(η)} $$
 
 >Key point: x and η only “mix” in exp(ηT . T(x))
 
@@ -314,9 +314,13 @@ Given a measure η, we deﬁne an exponential family of probability distribution
  (β^T.X)--f(β^T.X)--> µ-- Ψ(µ)-->η (Relationship between the variables in a generalized  linear model)
 
 ---
-####  Kullback-Leibler divergence / Information Gain / relative entropy
+####  Kullback-Leibler divergence (KL Divergence) / Information Gain / relative entropy
 
-In the context of machine learning, DKL(P\|\|Q) is often called the information gain achieved if Q is used instead of P. By analogy with information theory, it is also called the relative entropy of P with respect to Q.
+The KL divergence from  y^(or Q, your observation)  to  y (or P, ground truth)  is simply the difference between cross entropy and entropy:
+
+$$ KL(y \|\| y^)=∑iyilog1y^i−∑iyilog1yi=∑iyilogyiy^i $$
+
+In the context of machine learning, KL(P\|\|Q) is often called the information gain achieved if Q is used instead of P. By analogy with information theory, it is also called the relative entropy of P with respect to Q.
 
 ---
 
