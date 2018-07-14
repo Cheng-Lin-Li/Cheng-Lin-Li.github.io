@@ -205,6 +205,7 @@ It’s worth mentioning that Glorot & Bengio’s paper originally recommended us
 	$$Var(W) = \frac{2}{(n_{in}+n_{out})}$$
 	where $$n_{out}$$ is the number of neurons the result is fed to.
 
+---
 ####  He initialization: For the more recent rectifying nonlinearities (ReLu)
 ##### References:
 1. [https://arxiv.org/abs/1502.01852](https://arxiv.org/abs/1502.01852)
@@ -221,11 +222,11 @@ Which makes sense: a rectifying linear unit is zero for half of its input, so yo
 	GloVe is an unsupervised learning algorithm for obtaining vector representations for words. Training is performed on aggregated global word-word co-occurrence statistics from a corpus, and the resulting representations showcase interesting linear substructures of the word vector space. 
 
 ___
-####  $$F_(beta)$$ score: An easy to combine precision and recall measures
+####  $$F_{\beta}$$ score: An easy to combine precision and recall measures
 >
->$$F_(beta) = (1+beta^2)(precision*recall)/(beta^2*precision+recall)$$
+>$$F_{\beta} = \frac{(1+\beta^2)(precision*recall)}{(\beta^2*precision+recall)}$$
 >
->$$F1 = 2*(precision*recall)/(precision+recall)$$
+>$$F1 = \frac{2*(precision*recall)}{(precision+recall)}$$
 
 ___
 #### Symmetric Mean Absolute Percent Error (SMAPE)
@@ -236,7 +237,7 @@ ___
 	SMAPE is the forecast minus actuals divided by the sum of forecasts and actuals as expressed in formula:
   
 
->SMAPE = 2/N * Sum_(k=1~N)\|Fk-Ak\|/(Fk+Ak)
+>$$SMAPE = \frac{2}{N} * \sum_{k=1}^N\frac{|F_k-A_k|}/(F_k+A_k)}$$
 >
 >k = each time period.
 
@@ -249,7 +250,7 @@ Mean Absolute Percent Error (MAPE) is the most common measure of forecast error.
 With zeros or near-zeros, MAPE can give a distorted picture of error. The error on a near-zero item can be infinitely high, causing a distortion to the overall error rate when it is averaged in. For forecasts of items that are near or at zero volume, Symmetric Mean Absolute Percent Error (SMAPE) is a better measure.
 	MAPE is the average absolute percent error for each time period or forecast minus actuals divided by actuals:
 
->MAPE = 1/N * Sum_(k=1~N)\|Fk-Ak\|/Ak
+>MAPE = \frac{1}{N} * \sum_{k=1}^N\frac{|F_k-A_k|}{A_k}
 >
 >k = each time period.
 
@@ -281,15 +282,15 @@ With zeros or near-zeros, MAPE can give a distorted picture of error. The error 
 
 Given a measure η, we deﬁne an exponential family of probability distributions as those distributions whose density (relative to η) have the following general form: 
 
-> $$ p(x|η) = h(x)exp{ηT . T(x) − A(η)} $$
+> $$ p(x|η) = h(x)e^{η^T . T(x) − A(η)} $$
 
->Key point: x and η only “mix” in exp(ηT . T(x))
+>Key point: x and η only “mix” in exp^{(η^T . T(x))}
 
 >η : vector of "nature parameters"
 >
 >T(x): vector of "Natural Sufficient Statistic"
 >
->A(η): partition function/ cumulant generating function
+>A(η): partition function / cumulant generating function
 
 >h : X → R
 >
@@ -303,8 +304,8 @@ Given a measure η, we deﬁne an exponential family of probability distribution
 
   The generalized linear model (GLM) is a powerful generalization of linear regression to more general exponential family. The model is based on the following assumptions:
 
-1. The observed input enters the model through a linear function (β^T X).
-2. The conditional mean of response, is represented as a function of the linear combination: E[Y\|X] is defined as µ = f(β^T.X). 
+1. The observed input enters the model through a linear function $$(β^T X)$$.
+2. The conditional mean of response, is represented as a function of the linear combination: $$E[Y|X]$$ is defined as $$µ = f(β^T.X)$$. 
 3. The observed response is drawn from an exponential family distribution with conditional mean µ.
 
   η = Ψ(µ)
@@ -320,9 +321,9 @@ Given a measure η, we deﬁne an exponential family of probability distribution
 
 The KL divergence from  y^(or Q, your observation)  to  y (or P, ground truth)  is simply the difference between cross entropy and entropy:
 
-$$ KL(y \|\| y^)=∑iyilog1y^i−∑iyilog1yi=∑iyilogyiy^i $$
+$$ KL(y || \hat{y}=\sum_iy_ilog\frac{1}{hat{y}_i}−\sum_iy_ilog\frac{1}{y_i}=\sum_iy_ilog\frac{y_i}{\hat{y}_i} $$
 
-In the context of machine learning, KL(P\|\|Q) is often called the information gain achieved if Q is used instead of P. By analogy with information theory, it is also called the relative entropy of P with respect to Q.
+In the context of machine learning, $$KL(P||Q)$$ is often called the information gain achieved if Q is used instead of P. By analogy with information theory, it is also called the relative entropy of P with respect to Q.
 
 ---
 
