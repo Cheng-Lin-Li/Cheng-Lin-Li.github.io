@@ -237,7 +237,7 @@ ___
 	SMAPE is the forecast minus actuals divided by the sum of forecasts and actuals as expressed in formula:
   
 
->$$SMAPE = \frac{2}{N} * \sum_{k=1}^N\frac{|F_k-A_k|}/(F_k+A_k)}$$
+> $$SMAPE = \frac{2}{N} * \sum_{k=1}^N\frac{\vertF_k-A_k\vert}/(F_k+A_k)}$$
 >
 >k = each time period.
 
@@ -250,7 +250,7 @@ Mean Absolute Percent Error (MAPE) is the most common measure of forecast error.
 With zeros or near-zeros, MAPE can give a distorted picture of error. The error on a near-zero item can be infinitely high, causing a distortion to the overall error rate when it is averaged in. For forecasts of items that are near or at zero volume, Symmetric Mean Absolute Percent Error (SMAPE) is a better measure.
 	MAPE is the average absolute percent error for each time period or forecast minus actuals divided by actuals:
 
->MAPE = \frac{1}{N} * \sum_{k=1}^N\frac{|F_k-A_k|}{A_k}
+> $$MAPE = \frac{1}{N} * \sum_{k=1}^N\frac{\vertF_k-A_k\vert}{A_k}$$
 >
 >k = each time period.
 
@@ -263,9 +263,9 @@ With zeros or near-zeros, MAPE can give a distorted picture of error. The error 
 	
   Maximum Likelihood Estimation (MLE) and Maximum A Posteriori (MAP), are both a method for estimating some variable in the setting of probability distributions or graphical models. They are similar, as they compute a single estimate, instead of a full distribution.
 	Maximum Likelihood estimation (MLE): Choose value that maximizes the probability of observed data.
-	Cap Theta_MLE=argmax_(Theta)P(D|Theta)
+	$$Cap Theta_MLE=argmax_(Theta)P(D\vertTheta)$$
 	Maximum a posteriori(MAP) estimation: Choose value that is most probable given observed data and prior belief.
-	Cap Theta_MAP=argmax_(Theta)P(Theta|D)=argmax_(Theta)P(D|Theta)*P(Theta)
+	$$Cap Theta_MAP=argmax_(Theta)P(Theta\vertD)=argmax_(Theta)P(D\vertTheta)*P(Theta)$$
 	What we could conclude then, is that MLE is a special case of MAP, where the prior probability is uniform (the same everywhere)!
 
 ---
@@ -284,7 +284,7 @@ Given a measure η, we deﬁne an exponential family of probability distribution
 
 > $$ p(x|η) = h(x)e^{η^T . T(x) − A(η)} $$
 
->Key point: x and η only “mix” in exp^{(η^T . T(x))}
+>Key point: x and η only “mix” in $$exp^{(η^T . T(x))}$$
 
 >η : vector of "nature parameters"
 >
@@ -305,7 +305,7 @@ Given a measure η, we deﬁne an exponential family of probability distribution
   The generalized linear model (GLM) is a powerful generalization of linear regression to more general exponential family. The model is based on the following assumptions:
 
 1. The observed input enters the model through a linear function $$(β^T X)$$.
-2. The conditional mean of response, is represented as a function of the linear combination: $$E[Y|X]$$ is defined as $$µ = f(β^T.X)$$. 
+2. The conditional mean of response, is represented as a function of the linear combination: $$E[Y\vertX]$$ is defined as $$µ = f(β^T.X)$$. 
 3. The observed response is drawn from an exponential family distribution with conditional mean µ.
 
   η = Ψ(µ)
