@@ -195,19 +195,19 @@ Glorot initialization: it helps signals reach deep into the network.
 	a. If the weights in a network start too small, then the signal shrinks as it passes through each layer until it’s too tiny to be useful.
 	b. If the weights in a network start too large, then the signal grows as it passes through each layer until it’s too massive to be useful.
 
-Formular: Var(W) = 1/n_in
+Formular: $$Var(W) = 1/n_in$$
 
 where W is the initialization distribution for the neuron in question, and n_in is the number of neurons feeding into it. The distribution used is typically Gaussian or uniform.
 
 It’s worth mentioning that Glorot & Bengio’s paper originally recommended using: 
-	Var(W) = 2/(n_in+n_out)
-	where n_out is the number of neurons the result is fed to.
+	$$Var(W) = 2/(n_in+n_out)$$
+	where $$n_out$$ is the number of neurons the result is fed to.
 
 ####  He initialization: For the more recent rectifying nonlinearities (ReLu)
 ##### References:
 1. [https://arxiv.org/abs/1502.01852](https://arxiv.org/abs/1502.01852)
 
-Formular: Var(W) = 2/n_in
+Formular: $$Var(W) = 2/n_in$$
 
 Which makes sense: a rectifying linear unit is zero for half of its input, so you need to double the size of weight variance to keep the signal’s variance constant.
 
@@ -219,11 +219,11 @@ Which makes sense: a rectifying linear unit is zero for half of its input, so yo
 	GloVe is an unsupervised learning algorithm for obtaining vector representations for words. Training is performed on aggregated global word-word co-occurrence statistics from a corpus, and the resulting representations showcase interesting linear substructures of the word vector space. 
 
 ___
-####  F_(beta) score: An easy to combine precision and recall measures
+####  $$F_(beta)$$ score: An easy to combine precision and recall measures
 >
->F_(beta) = (1+beta^2)(precision*recall)/(beta^2*precision+recall)
+>$$F_(beta) = (1+beta^2)(precision*recall)/(beta^2*precision+recall)$$
 >
->F1 = 2*(precision*recall)/(precision+recall)
+>$$F1 = 2*(precision*recall)/(precision+recall)$$
 
 ___
 #### Symmetric Mean Absolute Percent Error (SMAPE)
@@ -279,7 +279,7 @@ With zeros or near-zeros, MAPE can give a distorted picture of error. The error 
 
 Given a measure η, we deﬁne an exponential family of probability distributions as those distributions whose density (relative to η) have the following general form: 
 
-> $$ p(x\|η) = h(x)exp{ηT . T(x) − A(η)} $$
+> $$ p(x|η) = h(x)exp{ηT . T(x) − A(η)} $$
 
 >Key point: x and η only “mix” in exp(ηT . T(x))
 
