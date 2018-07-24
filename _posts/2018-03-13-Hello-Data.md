@@ -286,7 +286,7 @@ With zeros or near-zeros, MAPE can give a distorted picture of error. The error 
 1. [http://blog.csdn.net/dream_angel_z/article/details/46288167](http://blog.csdn.net/dream_angel_z/article/details/46288167)
 2. [http://www.cnblogs.com/huangshiyu13/p/6820729.html](http://www.cnblogs.com/huangshiyu13/p/6820729.html)
 
-Given a measure η, we deﬁne an exponential family of probability distributions as those distributions whose density (relative to η) have the following general form: 
+Given a measure η, we define an exponential family of probability distributions as those distributions whose density (relative to η) have the following general form: 
 
 > $$ p(x\vert η) = h(x)e^{η^T . T(x) − A(η)} $$
 
