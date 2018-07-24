@@ -117,12 +117,14 @@ Nonparametric methods are good when you have a lot of data and no prior knowledg
 ---
 #### Generative & Discriminative models:
 ##### Reference:
-1. [http://cs229.stanford.edu/notes/cs229-notes2.pdf](http://cs229.stanford.edu/notes/cs229-notes2.pdf)
+1. [https://en.wikipedia.org/wiki/Generative_model](https://en.wikipedia.org/wiki/Generative_model)
 
 
-* Generative model
+* Generative model, also called joint distribution models.
 
-  Generative learning algorithms. For instance, if y indicates whether an example is a dog (0) or an elephant (1), then p(x\|y = 0) models the distribution of dogs’ features, and p(x\|y = 1) models the distribution of elephants’ features.
+  Generative learning algorithms assume there is a model to GENERATE the observable variable by hidden(or target) variable and the hidden variables is a distribution rather than a fix value.
+ 
+  Given an observable variable X and a target variable Y, a generative model is a statistical model of the joint probability distribution on X × Y, P ( X , Y )
 
   1. Gaussian mixture model and other types of mixture model
   2. Hidden Markov model
@@ -135,7 +137,11 @@ Nonparametric methods are good when you have a lot of data and no prior knowledg
 
 * Discriminative model, also called conditional models.
 
-  Algorithms that try to learn p(y\|x) directly (such as logistic regression), or algorithms that try to learn mappings directly from the space of inputs X to the labels {0,1}, (such as the perceptron algorithm) are called discriminative learning algorithms. 
+  A discriminative model is a model of the conditional probability of the target Y, given an observation x, symbolically, P ( Y \| X = x ) and, 
+  
+  Classifiers computed without using a probability model are also referred to loosely as "discriminative".
+
+  Algorithms that try to learn P( Y \| X ) directly (such as logistic regression) by given X, or algorithms that try to learn mappings directly from the space of inputs X to the labels {0,1}, (such as the perceptron algorithm) are called discriminative learning algorithms. 
 
   1. Logistic regression, a type of generalized linear regression used for predicting binary or categorical outputs (also known as maximum entropy classifiers)
   2. Support vector machines
@@ -234,10 +240,10 @@ ___
 1. [http://www.vanguardsw.com/business-forecasting-101/symmetric-mean-absolute-percent-error-smape/](http://www.vanguardsw.com/business-forecasting-101/symmetric-mean-absolute-percent-error-smape/)
 
 	An alternative to Mean Absolute Percent Error (MAPE) when there are zero or near-zero demand for items. SMAPE self-limits to an error rate of 200%, reducing the influence of these low volume items. Low volume items are problematic because they could otherwise have infinitely high error rates that skew the overall error rate.
-	SMAPE is the forecast minus actuals divided by the sum of forecasts and actuals as expressed in formula:
+	SMAPE is the forecast minus actual divided by the sum of forecasts and actual as expressed in formula:
   
 
->$$SMAPE = \frac{2}{N} * \sum_{k=1}^N\frac{\vert F_k-A_k\vert}/(F_k+A_k)}$$
+> $$SMAPE = \frac{2}{N} * \sum_{k=1}^N\frac{\vert F_k-A_k\vert}{(F_k + A_k)}$$
 >
 >k = each time period.
 
@@ -263,9 +269,9 @@ With zeros or near-zeros, MAPE can give a distorted picture of error. The error 
 	
   Maximum Likelihood Estimation (MLE) and Maximum A Posteriori (MAP), are both a method for estimating some variable in the setting of probability distributions or graphical models. They are similar, as they compute a single estimate, instead of a full distribution.
 	Maximum Likelihood estimation (MLE): Choose value that maximizes the probability of observed data.
-	$$Cap Theta_MLE=argmax_(Theta)P(D\vert Theta)$$
+	$$Cap Theta_MLE=argmax_(\theta)P(D\vert Theta)$$
 	Maximum a posteriori(MAP) estimation: Choose value that is most probable given observed data and prior belief.
-	$$Cap Theta_MAP=argmax_(Theta)P(Theta\vert D)=argmax_(Theta)P(D\vert Theta)*P(Theta)$$
+	$$\hat \theta_MAP=argmax_(\theta)P(Theta\vert D)=argmax_(\theta)P(D\vert \theta)*P(\theta)$$
 	What we could conclude then, is that MLE is a special case of MAP, where the prior probability is uniform (the same everywhere)!
 
 ---
