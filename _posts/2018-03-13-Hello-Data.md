@@ -269,9 +269,9 @@ With zeros or near-zeros, MAPE can give a distorted picture of error. The error 
 	
   Maximum Likelihood Estimation (MLE) and Maximum A Posteriori (MAP), are both a method for estimating some variable in the setting of probability distributions or graphical models. They are similar, as they compute a single estimate, instead of a full distribution.
 	Maximum Likelihood estimation (MLE): Choose value that maximizes the probability of observed data.
-	$$\hat \theta_{MLE}=\underset{\theta}argmaxP(D\vert \theta)$$
+	$$\hat \theta_{MLE}={\underset{\theta}argmax}P(D\vert \theta)$$
 	Maximum a posteriori(MAP) estimation: Choose value that is most probable given observed data and prior belief.
-	$$\hat \theta_{MAP}=\underset{\theta}argmaxP(\theta\vert D)=\underset{\theta}argmaxP(D\vert \theta)*P(\theta)$$
+	$$\hat \theta_{MAP}={\underset{\theta}argmax}P(\theta\vert D)={\underset{\theta}argmax}P(D\vert \theta)*P(\theta)$$
 	What we could conclude then, is that MLE is a special case of MAP, where the prior probability is uniform (the same everywhere)!
 
 ---
