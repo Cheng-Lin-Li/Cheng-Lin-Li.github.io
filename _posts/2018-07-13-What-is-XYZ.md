@@ -177,16 +177,25 @@ A naive implementation would be to simply sample the majority class at random un
 For example, if your majority class has 1,000 observations and you have a minority class with 20 observations, you would collect your training data for the majority class by randomly sampling 20 observations from the original 1,000. As you might expect, this could potentially result in removing key characteristics of the majority class.
 
 #### Near miss
-
+reference: [Illustration of the sample selection for the different NearMiss algorithms](http://contrib.scikit-learn.org/imbalanced-learn/stable/auto_examples/under-sampling/plot_illustration_nearmiss.html)
 The general idea behind near miss is to only the sample the points from the majority class necessary to distinguish between other classes.
 
 ##### NearMiss-1 
 
 Select samples from the majority class for which the average distance of the N closest samples of a minority class is smallest.
 
+![NearMis-1](ttp://contrib.scikit-learn.org/imbalanced-learn/stable/auto_examples/under-sampling/plot_illustration_nearmiss.html)
+
 ##### NearMiss-2 
 
 Select samples from the majority class for which the average distance of the N farthest samples of a minority class is smallest.
+
+![NearMis-2](http://contrib.scikit-learn.org/imbalanced-learn/stable/auto_examples/under-sampling/plot_illustration_nearmiss.html)
+
+##### NearMiss-3 
+
+NearMiss-3 is a 2-steps algorithm. First, for each negative sample, their M nearest-neighbors will be kept. Then, the positive samples selected are the one for which the average distance to the N nearest-neighbors is the largest.
+![NearMis-3](http://contrib.scikit-learn.org/imbalanced-learn/stable/auto_examples/under-sampling/plot_illustration_nearmiss.html)
 
 #### Tomeks links
 
