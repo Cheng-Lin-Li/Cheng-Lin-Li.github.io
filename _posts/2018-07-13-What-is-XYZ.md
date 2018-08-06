@@ -93,14 +93,14 @@ A regression model that uses L1 regularization technique is called Lasso Regress
 Lasso Regression (Least Absolute Shrinkage and Selection Operator) adds “absolute value of magnitude” of coefficient as penalty term to the loss function.
 Lasso shrinks the less important feature’s coefficient to zero thus, removing some feature altogether. So, this works well for feature selection in case we have a huge number of features.
 
-$$w^* = \underset{w}argmin\sum_j^n (t(x_i)-\sum_i^k w_i h_i(x_j))^2 + \lambda \sum_{i=1}^k \|w_i\|
+$$w^* = \underset{w}argmin\sum_j^n (t(x_i)-\sum_i^k w_i h_i(x_j))^2 + \lambda \sum_{i=1}^k \|w_i\|$$
 
 ### What is L2 regularizer?
 Reference: [Differences between L1 and L2 as Loss Function and Regularization](http://www.chioka.in/differences-between-l1-and-l2-as-loss-function-and-regularization/)
 A regression model which uses L2 is called Ridge Regression
 Ridge regression adds “squared magnitude” of coefficient as penalty term to the loss function
 
-$$w^* = \underset{w}argmin\sum_j^n (t(x_i)-\sum_i^k w_i h_i(x_j))^2 + \lambda \sum_{i=1}^k (w_i)^2
+$$w^* = \underset{w}argmin\sum_j^n (t(x_i)-\sum_i^k w_i h_i(x_j))^2 + \lambda \sum_{i=1}^k (w_i)^2$$
 
 ### What is imbalance data?
 Reference: [imbalanced data](https://www.jeremyjordan.me/imbalanced-data/)
@@ -193,9 +193,9 @@ Reference: [imbalanced data](https://www.jeremyjordan.me/imbalanced-data/)
 An ROC curve visualizes an algorithm's ability to discriminate the positive class from the rest of the data.
 We'll do this by plotting the True Positive Rate against the False Positive Rate for varying prediction thresholds.
 
-$$ TPR = \frac{True Positives}{True Positives + False Negatives}
+$$TPR = \frac{True Positives}{True Positives + False Negatives}
 
-$$ FPR = \frac{False Positives}{False Positives + True Negatives}
+$$FPR = \frac{False Positives}{False Positives + True Negatives}
 
 ### What is the area under the curve (AUC)?
 Reference: [imbalanced data](https://www.jeremyjordan.me/imbalanced-data/)
@@ -217,9 +217,12 @@ Leverage gaussian distribution on each feature to form a probability model.
 Then set up an error probability = e, then P($$x_test$$) < e will be an anomaly case.
 Assume each feature $$x_i$$ are independent and its values fellow gaussian distribution.
 
-P(X) = P($$x_1$$; $$\mu_1$$; $$\sigma_1^2$$) * P($$x_2$$; $$\mu_2$$; $$\sigma_2^2$$) * ... * P($$x_n$$; $$\mu_3$$; $$\sigma_3^2$$)
+P(X) = P($$x_1$$; $$\mu_1$$; $$\sigma_1^2$$) * P($$x_2$$; $$\mu_2$$; $$\sigma_2^2$$) * ... * P($$x_n$$; $$\mu_n$$; $$\sigma_n^2$$)
 
 We can plot histogram for each feature to verify its distribution. If it does not follow gaussian distribution, we need to transform the feature to new feature.
+
 example:
+
 $$x_{new1}$$ = log($$x_1$$)
+
 $$x_{new2}$$ = $$x_2^{0.05}$$ 
