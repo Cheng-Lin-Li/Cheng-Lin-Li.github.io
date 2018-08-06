@@ -53,11 +53,13 @@ Given our simple linear equation
 y=mx+b, we can calculate MSE as:
 
 $$MSE = \frac{1}{N}\sum_{i=1}^n(y_i - (mx_i + b))^2$$
-```text
+
 N is the total number of data
+
 $$y_i$$ is the actual data
+
 $$mx_i + b$$ is our prediction
-```
+
 ```python
 def MSE(yHat, y):
     return np.sum((yHat - y)**2) / y.size
@@ -67,15 +69,21 @@ def MSE(yHat, y):
 Cross-Entropy
 
 In binary classification, where the number of classes M equals 2, cross-entropy can be calculated as:
+
 Binary Cross Entropy = −(ylog(p)+(1−y)log(1−p))
 
 Cross-Entropy = $$-\sum_{c=1}^M y_{o,c}log(p_{o,c})$$
-```text
+
 M - number of classes (dog, cat, fish)
+
 log - the natural log
+
 y - binary indicator (0 or 1) if class label 
+
 c is the correct classification for observation o
+
 p - predicted probability observation o is of class c
+
 ```
 ```python
 def CrossEntropy(yHat, y):
