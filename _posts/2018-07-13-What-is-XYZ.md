@@ -70,9 +70,10 @@ Cross-Entropy
 
 In binary classification, where the number of classes M equals 2, cross-entropy can be calculated as:
 
-Binary Cross Entropy = −(ylog(p)+(1−y)log(1−p))
+$$Binary Cross Entropy = −(ylog(p)+(1−y)log(1−p))$$
 
-Cross-Entropy = $$-\sum_{c=1}^M y_{o,c}log(p_{o,c})$$
+$$Cross-Entropy = -\sum_{c=1}^M y_{o,c}log(p_{o,c})$$
+
 
 M - number of classes (dog, cat, fish)
 
@@ -84,7 +85,6 @@ c is the correct classification for observation o
 
 p - predicted probability observation o is of class c
 
-```
 ```python
 def CrossEntropy(yHat, y):
     if y == 1:
@@ -94,8 +94,8 @@ def CrossEntropy(yHat, y):
 ```
 
 
-# Optimization of model
-## What is L1 regularizer?
+## Optimization of model
+### What is L1 regularizer?
 Reference: [Differences between L1 and L2 as Loss Function and Regularization](http://www.chioka.in/differences-between-l1-and-l2-as-loss-function-and-regularization/)
 A regression model that uses L1 regularization technique is called Lasso Regression
 Lasso Regression (Least Absolute Shrinkage and Selection Operator) adds “absolute value of magnitude” of coefficient as penalty term to the loss function.
@@ -103,14 +103,14 @@ Lasso shrinks the less important feature’s coefficient to zero thus, removing 
 
 $$w^* = \underset{w}argmin\sum_j^n (t(x_i)-\sum_i^k w_i h_i(x_j))^2 + \lambda \sum_{i=1}^k \|w_i\|$$
 
-## What is L2 regularizer?
+### What is L2 regularizer?
 Reference: [Differences between L1 and L2 as Loss Function and Regularization](http://www.chioka.in/differences-between-l1-and-l2-as-loss-function-and-regularization/)
 A regression model which uses L2 is called Ridge Regression
 Ridge regression adds “squared magnitude” of coefficient as penalty term to the loss function
 
 $$w^* = \underset{w}argmin\sum_j^n (t(x_i)-\sum_i^k w_i h_i(x_j))^2 + \lambda \sum_{i=1}^k (w_i)^2$$
 
-# What is imbalance data?
+## What is imbalance data?
 Reference: [imbalanced data](https://www.jeremyjordan.me/imbalanced-data/)
 
 Imbalanced data typically refers to a classification problem where the number of observations per class is not equally distributed; often you'll have a large amount of data/observations for one class (referred to as the majority class), and much fewer observations for one or more other classes (referred to as the minority classes)
@@ -123,7 +123,7 @@ One of the simplest ways to address the class imbalance is to simply "provide a 
 
 Another approach towards dealing with a class imbalance is to simply alter the dataset to remove such an imbalance. 
 
-## What are metrics to evaluate a model for imbalance data
+### What are metrics to evaluate a model for imbalance data
 Accuracy is not a good metrics for imbalance data. The model always predict the negative (majority) cases will get high accuracy.
 
 Below are better metrics:
@@ -134,15 +134,15 @@ Below are better metrics:
 
 3. F1 or $$F_{\beta}
 
-## Oversampling
+### Oversampling
 
 Oversampling the minority classes to increase the number of minority observations until we've reached a balanced dataset.
 
-### Random oversampling
+#### Random oversampling
 
 The most naive method of oversampling is to randomly sample the minority classes and simply duplicate the sampled observations. With this technique, it's important to note that you're artificially "reducing the variance" of the dataset.
 
-### Synthetic Minority Over-sampling Technique (SMOTE) 
+#### Synthetic Minority Over-sampling Technique (SMOTE) 
 
 SMOTE is a technique that generates new observations by interpolating between observations in the original dataset.
 
@@ -166,18 +166,18 @@ This algorithm has three options for selecting which observations, $$x_i$$, to u
 
 3. svm: Uses an SVM classifier to identify the support vectors (samples close to the decision boundary) and samples $$x_i$$ from these points.
 
-###  Adaptive Synthetic (ADASYN)
+####  Adaptive Synthetic (ADASYN)
 Adaptive Synthetic (ADASYN) sampling works in a similar manner as SMOTE, however, the number of samples generated for a given $$x_i$$ is proportional to the number of nearby samples which "do not" belong to the same class as $$x_i$$. Thus, ADASYN tends to focus solely on outliers when generating new synthetic training examples.
 
-## Undersampling
+### Undersampling
 To achieve class balance by undersampling the majority class - essentially throwing away data to make it easier to learn characteristics about the minority classes.
 
-### Random undersampling
+#### Random undersampling
 A naive implementation would be to simply sample the majority class at random until reaching a similar number of observations as the minority classes.
 
 For example, if your majority class has 1,000 observations and you have a minority class with 20 observations, you would collect your training data for the majority class by randomly sampling 20 observations from the original 1,000. As you might expect, this could potentially result in removing key characteristics of the majority class.
 
-### Near miss
+#### Near miss
 reference: [Illustration of the sample selection for the different NearMiss algorithms](http://contrib.scikit-learn.org/imbalanced-learn/stable/auto_examples/under-sampling/plot_illustration_nearmiss.html)
 
 The general idea behind near miss is to only the sample the points from the majority class necessary to distinguish between other classes.
@@ -199,7 +199,7 @@ Select samples from the majority class for which the average distance of the N f
 NearMiss-3 is a 2-steps algorithm. First, for each negative sample, their M nearest-neighbors will be kept. Then, the positive samples selected are the one for which the average distance to the N nearest-neighbors is the largest.
 ![NearMiss3](http://contrib.scikit-learn.org/imbalanced-learn/stable/_images/sphx_glr_plot_illustration_nearmiss_003.png)
 
-### Tomeks links
+#### Tomeks links
 
 Tomek’s link exists if two observations of different classes are the nearest neighbors of each other.
 
@@ -209,7 +209,7 @@ Depending on the dataset, this technique won't actually achieve a balance among 
 
 Most classifiers will still perform adequately for imbalanced datasets as long as there's a clear separation between the classifiers. Thus, by focusing on removing noisy examples of the majority class, we can improve the performance of our classifier even if we don't necessarily balance the classes.
 
-### Edited nearest neighbors
+#### Edited nearest neighbors
 
 Edited Nearest Neighbors applies a nearest-neighbors algorithm and "edit" the dataset by removing samples which do not agree “enough” with their neighborhood. 
 
@@ -217,7 +217,7 @@ For each sample in the class to be under-sampled, the nearest-neighbors are comp
 
 This is a similar approach as Tomek's links in the respect that we're not necessarily focused on actually achieving a class balance, we're simply looking to remove noisy observations in an attempt to make for an easier classification problem.
 
-# What is Receiver Operating Characteristics (ROC) curve?
+## What is Receiver Operating Characteristics (ROC) curve?
 Reference: [imbalanced data](https://www.jeremyjordan.me/imbalanced-data/)
 
 An ROC curve visualizes an algorithm's ability to discriminate the positive class from the rest of the data.
@@ -227,14 +227,14 @@ $$TPR = \frac{True Positives}{True Positives + False Negatives}$$
 
 $$FPR = \frac{False Positives}{False Positives + True Negatives}$$
 
-# What is the area under the curve (AUC)?
+## What is the area under the curve (AUC)?
 Reference: [imbalanced data](https://www.jeremyjordan.me/imbalanced-data/)
 
 The area under the curve (AUC) is a single-value metric for which attempts to summarize an ROC curve to evaluate the quality of a classifier.
 This metric approximates the area under the ROC curve for a given classifier.
 The ideal curve hugs the upper left hand corner as closely as possible, giving us the ability to identify all true positives while avoiding false positives; this ideal model would have an AUC of 1. On the flipside, if your model was no better than a random guess, your TPR and FPR would increase in parallel to one another, corresponding with an AUC of 0.5.
 
-# What is Anomaly Detection?
+## What is Anomaly Detection?
 Reference: 
 
 [Anomaly Detection](https://www.youtube.com/watch?v=8DfXJUDjx64)
