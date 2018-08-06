@@ -207,7 +207,9 @@ The ideal curve hugs the upper left hand corner as closely as possible, giving u
 ### What is Anomaly Detection?
 Reference: 
 [Anomaly Detection](https://www.youtube.com/watch?v=8DfXJUDjx64)
+
 [Anomaly Detection Algorithm](https://www.youtube.com/watch?v=g2YBWQnqOpw)
+
 [Dealing with Imbalanced Classes in Machine Learning](https://towardsdatascience.com/dealing-with-imbalanced-classes-in-machine-learning-d43d6fa19d2)
 
 When you positive data is extremely small (2~20 or less than 50), throw away minority examples and switch to an anomaly detection framework. 
