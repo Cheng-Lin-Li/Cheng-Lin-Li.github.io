@@ -193,9 +193,9 @@ Reference: [imbalanced data](https://www.jeremyjordan.me/imbalanced-data/)
 An ROC curve visualizes an algorithm's ability to discriminate the positive class from the rest of the data.
 We'll do this by plotting the True Positive Rate against the False Positive Rate for varying prediction thresholds.
 
-$$TPR = \frac{True Positives}{True Positives + False Negatives}
+$$TPR = \frac{True Positives}{True Positives + False Negatives}$$
 
-$$FPR = \frac{False Positives}{False Positives + True Negatives}
+$$FPR = \frac{False Positives}{False Positives + True Negatives}$$
 
 ### What is the area under the curve (AUC)?
 Reference: [imbalanced data](https://www.jeremyjordan.me/imbalanced-data/)
