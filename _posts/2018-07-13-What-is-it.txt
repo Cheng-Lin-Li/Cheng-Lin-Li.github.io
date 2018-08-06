@@ -1,6 +1,6 @@
 ---
 layout: post
-title: What is it?.
+title: What is XYZ?
 tags: terminology
 ---
 
