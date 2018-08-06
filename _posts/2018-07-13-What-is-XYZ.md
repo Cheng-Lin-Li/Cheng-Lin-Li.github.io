@@ -123,6 +123,17 @@ One of the simplest ways to address the class imbalance is to simply "provide a 
 
 Another approach towards dealing with a class imbalance is to simply alter the dataset to remove such an imbalance. 
 
+#### What are metrics to evaluate a model for imbalance data
+Accuracy is not a good metrics for imbalance data. The model always predict the negative (majority) cases will get high accuracy.
+
+Below are better metrics:
+
+1. TP (True Positive), FP (False Positive), TN (True Negative), FN 
+
+2. Precision and recall
+
+3. F1 or $$F_{\beta}
+
 #### Oversampling
 
 Oversampling the minority classes to increase the number of minority observations until we've reached a balanced dataset.
