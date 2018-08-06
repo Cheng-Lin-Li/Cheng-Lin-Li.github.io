@@ -185,7 +185,7 @@ The general idea behind near miss is to only the sample the points from the majo
 
 Select samples from the majority class for which the average distance of the N closest samples of a minority class is smallest.
 
-![NearMiss1](ttp://contrib.scikit-learn.org/imbalanced-learn/stable/_images/sphx_glr_plot_illustration_nearmiss_001.png)
+![NearMiss1](http://contrib.scikit-learn.org/imbalanced-learn/stable/_images/sphx_glr_plot_illustration_nearmiss_001.png)
 
 ##### NearMiss-2 
 
