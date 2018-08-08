@@ -7,7 +7,7 @@ permalink: /project/
 How to start a project in machine learning? How can I leverage all those techniques into real world challenge? There are my projects and competitions Jupyter notebooks for you as a starting points.
 
 
-  1. Enlighten Segmentation, July 2018
+  1. [Enlighten Segmentation, July 2018](https://github.com/Cheng-Lin-Li/SegCaps)
       
       This is a project which build up a pipeline line to enable research on image segmentation task based on Capsule Nets or SegCaps from scratch by Microsoft Common Objects in COntext (MS COCO) 2D image dataset.
 
@@ -29,8 +29,8 @@ How to start a project in machine learning? How can I leverage all those techniq
       Author's project page for this work can be found at [https://rodneylalonde.wixsite.com/personal/research-blog/capsules-for-object-segmentation](https://rodneylalonde.wixsite.com/personal/research-blog/capsules-for-object-segmentation).  
   
   
-    2. Objects detection and segmentation: Keras/Tensorflow/OpenCV(under constructing)
-      This task is based on Mask RCNN (extends Faster R-CNN by adding a branch for predicting an object mask in parallel with the existing branch for bounding box recognition) to perform transfer learning on Nuclear detection from varience image files.
+  2. [Objects detection and segmentation: Keras/Tensorflow/OpenCV](https://github.com/Cheng-Lin-Li/MachineLearning/blob/master/Competition/ObjectDetectionSegmentation/Video-Demo-Mask_RCNN.ipynb)
+      This task is based on Mask RCNN (extends Faster R-CNN by adding a branch for predicting an object mask in parallel with the existing branch for bounding box recognition) to perform transfer learning on Nuclear detection from variance image files.
 
       My trial works to integrate threading webcam stream and the pre-trained for object detection and segmentation tasks.
 
@@ -51,7 +51,7 @@ How to start a project in machine learning? How can I leverage all those techniq
 
       Github address: [https://github.com/Cheng-Lin-Li/MachineLearning/tree/master/TensorFlow](https://github.com/Cheng-Lin-Li/MachineLearning/tree/master/TensorFlow)
 
-  4. Market Trend Prediction with Social Media Listening: Python/Keras/Facebook Graph API/Twitter API/ACHE Crawler/Beautifulsoup
+  4. [Market Trend Prediction with Social Media Listening: Python/Keras/Facebook Graph API/Twitter API/ACHE Crawler/Beautifulsoup]((https://github.com/Cheng-Lin-Li/Market-Trend-Prediction/blob/master/source/Dow%20Jones%20Industrial%20Average%20Prediction%20with%20Media%20Channel%20Info-with%20Social%20Info.ipynb)
       
       This project leveraged 1.5 years of 30 historical stock prices, Dow Jones Industrial Average(DJIA) index, with semantic information from social media (Facebook and Twitter) on T day to provide better one to many DJIA trend classifications for T+1/T+30 days than the model without social media info by LSTM in python a Keras.
 
@@ -63,7 +63,8 @@ How to start a project in machine learning? How can I leverage all those techniq
  with NO Social Media information](https://github.com/Cheng-Lin-Li/Market-Trend-Prediction/blob/master/source/Dow%20Jones%20Industrial%20Average%20Prediction%20without%20Social%20media%20data.ipynb)
 
       Github address: [https://github.com/Cheng-Lin-Li/Market-Trend-Prediction](https://github.com/Cheng-Lin-Li/Market-Trend-Prediction)
-  5. Information Visualization Project - Business Cycle Introduction
+
+  5. [Information Visualization Project - Business Cycle Introduction](https://cheng-lin-li.github.io/assets/InformationVisualization/BusinessCycle/dist/index.html)
       
       Build up a web application to introduce what business cycle is and how it will impact to us.
 
