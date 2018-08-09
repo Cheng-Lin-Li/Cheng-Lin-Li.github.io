@@ -132,7 +132,7 @@ Below are better metrics:
 
 2. Precision and recall
 
-3. F1 or $$F_{\beta}
+3. F1 or $$F_{\beta}$$
 
 ### Oversampling
 
