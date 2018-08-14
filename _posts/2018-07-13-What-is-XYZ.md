@@ -259,3 +259,23 @@ example:
 $$x_{new1}$$ = log($$x_1$$)
 
 $$x_{new2}$$ = $$x_2^{0.05}$$ 
+
+## What is p value?
+
+The P value, or calculated probability, is the probability of finding the observed, or more extreme, results when the null hypothesis ($$H_0$$) of a study question is true – the definition of ‘extreme’ depends on how the hypothesis is being tested. P is also described in terms of rejecting $$H_0$$ when it is actually true, however, it is not a direct probability of this state.
+
+## What is TF-IDF?
+Term Frequency–Inverse Document Frequency
+
+Term Frequency also known as TF measures the number of times a term (word) occurs in a document. 
+
+$$tf(t,d) = \frac{f_{t,d}}{\sum{t'\mathbb{d}}f_{t',d}} $$
+
+The inverse document frequency is a measure of how much information the word provides, that is, whether the term is common or rare across all documents.
+
+$$idf(t, D) = log \frac{N}{\|{d\mathbb{D}: t\mathbb{d}}\|}$$
+
+- N: total number of documents in the corpus N = |D|
+- $$\|{d\mathbb{D}: t\mathbb{d}}\|$$: number of documents where the term t appears. if the term is not in the corpus, this will lead to a division-by-zero. It is therefore common to adjust the denominator to 1+ $$\|{d\mathbb{D}: t\mathbb{d}}\|$$
+
+$$tfidf(t,d, D) = tf(t, d) * idf(t, D)$$
