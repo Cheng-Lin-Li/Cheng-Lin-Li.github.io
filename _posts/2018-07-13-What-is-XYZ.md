@@ -275,7 +275,7 @@ The inverse document frequency is a measure of how much information the word pro
 
 $$idf(t, D) = log \frac{N}{\|{d\in{D}: t\in{d}}\|}$$
 
-- N: total number of documents in the corpus N = |D|
+- N: total number of documents in the corpus N = \|D\|
 - $$\|{d\in{D}: t\in{d}}\|$$: number of documents where the term t appears. if the term is not in the corpus, this will lead to a division-by-zero. It is therefore common to adjust the denominator to 1+ $$\|{d\in{D}: t\in{d}}\|$$
 
 $$tfidf(t,d, D) = tf(t, d) * idf(t, D)$$
