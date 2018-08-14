@@ -269,7 +269,7 @@ Term Frequency–Inverse Document Frequency
 
 Term Frequency also known as TF measures the number of times a term (word) occurs in a document. 
 
-$$tf(t,d) = \frac{f_{t,d}}{\sum_{t'\mathbb{d}}f_{t',d}} $$
+$$tf(t,d) = \frac{f_{t,d}}{\sum_{t'\in{d}}f_{t',d}} $$
 
 The inverse document frequency is a measure of how much information the word provides, that is, whether the term is common or rare across all documents.
 
