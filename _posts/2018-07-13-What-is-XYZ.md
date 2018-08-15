@@ -282,16 +282,23 @@ $$tfidf(t,d, D) = tf(t, d) * idf(t, D)$$
 
 ## What is Bias?
 
-$$B(\hat(theta)) = E(\hat{\theta}) - \theta$$
+The bias of an estimator $$\hat{\theta}$$ to a statistic model $$\theta$$ is:
 
-Or you may estimate/measure the Bias by
-$$Mean Error + Irreducible Error = ME + noise = \frac{1}{n}\sum_{j=1}^n(E_j - A) + noise$$
+$$B_\theta(\hat{theta}) = E(\hat{\theta}) - \theta$$
+
+### MSD: Mean Signed difference, Deviation or error
+
+$$ B = Mean Signed Difference + Irreducible Error = MSD(\hat{\theta}) + noise = \frac{1}{n}\sum_{j=1}^n(\hat{\theta_j} - \theta_i) + noise$$
+
+In a simulation experiment concerning the properties of an estimator, the bias of the estimator may be assessed using the mean signed difference (ignore the noise for estimation purpose).
 
 $$A$$ is truth value of each input $$E_j$$
 
-$$E(\hat{\theta})$$ is the expectation of output from estimator with parameters $$\hat{\theta}$$
-
 $$\theta$$ is parameters of the ground truth statistic model
+
+$$\hat{\theta}$$ is an estimator of $$\theta$$ based on any observed data x.
+
+$$E(\hat{\theta})$$ is the expectation of output from estimator with parameters $$\hat{\theta}$$
 
 The bias is an error from erroneous assumptions in the learning algorithm. High bias can cause an algorithm to miss the relevant relations between features and target outputs (underfitting).
 
