@@ -281,13 +281,25 @@ $$idf(t, D) = log \frac{N}{\|{d\in{D}: t\in{d}}\|}$$
 $$tfidf(t,d, D) = tf(t, d) * idf(t, D)$$
 
 ## What is Bias?
+
+$$B(\hat(theta)) = E(\hat{\theta}) - \theta$$
+
+Or you may estimate/measure the Bias by
+$$Mean Error + Irreducible Error = ME + noise = \frac{1}{n}\sum_{j=1}^n(E_j - A) + noise$$
+
+$$A$$ is truth value of each input $$E_j$$
+
+$$E(\hat{\theta})$$ is the expectation of output from model with parameters $$\hat{\theta}$$
+
+$$\theta$$ is parameters of the estimator (statistic model)
+
 The bias is an error from erroneous assumptions in the learning algorithm. High bias can cause an algorithm to miss the relevant relations between features and target outputs (underfitting).
 
 Bias occurs when an algorithm has limited flexibility or is not complex enough produce underfit model that can't learn the true signal from a dataset.
 
 High bias, low variance algorithms train models that are consistent, but inaccurate on average. Small gap between training and test error but unacceptable high training error in high bias cases.
 
-Try a larger set of features to fix high bias.
+Try a larger set of features, less regularization, unpruned trees, small-k KNN to fix high bias/small variance issue.
 
 ## What is Variance?
 
@@ -297,12 +309,13 @@ Variance refers to an algorithm's sensitivity to specific sets of training data.
 
 High variance, low bias algorithms train models that are accurate on average, but inconsistent. Test error still decreasing as training set size increase but large gap between training and test error. Suggests larger training set will help.
 
-Try to get more training examples or try a smaller set of features to fix high variance.
+Try to get more training examples, highly regularized, highly pruned decision, large K KNN or try a smaller set of features to fix high variance/small bias issue.
 
 ## What is Bias-Variance tradeoff?
 
 To get good predictions, you'll need to find a balance of bias and variance that minimizes "total error".
 
+### What is Bias-Variance decomposition of error?
 $$Total Error = Bias^2 + Variance + Irreducible Error$$
 
 Irreducible error is "noise" that can't be reduced by algorithm. It can sometimes be reduced by better data cleaning.
@@ -328,6 +341,23 @@ A proper machine learning workflow finds that optimal balance.
 - Proper performance metrics
 - Systematic cross-validation
 
-Reference: [https://elitedatascience.com/bias-variance-tradeoff](https://elitedatascience.com/bias-variance-tradeoff)
 
-![Bias-VarianceTradeOff](https://34tzkp3af7ck1k675g1stf6n-wpengine.netdna-ssl.com/wp-content/uploads/2017/06/Bias-vs.-Variance-v4-chart.png)
+![Bias-VarianceTradeOff](http://scott.fortmann-roe.com/docs/docs/BiasVariance/biasvariance.png)
+
+Reference: 
+
+1. [https://elitedatascience.com/bias-variance-tradeoff](https://elitedatascience.com/bias-variance-tradeoff)
+
+2. [Understanding the Bias-Variance Tradeoff ](http://scott.fortmann-roe.com/docs/BiasVariance.html)
+
+
+
+## What is Recurrent Neural Network?
+
+
+## What are main gates in Long Short-Term Memory (LSTM)?
+
+
+## What is (Support Vector Machine) SVM?
+
+
