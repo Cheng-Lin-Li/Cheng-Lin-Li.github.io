@@ -325,7 +325,7 @@ Given a measure η, we define an exponential family of probability distributions
 ---
 ####  Kullback-Leibler divergence (KL Divergence) / Information Gain / relative entropy
 
-The KL divergence from  y^(or Q, your observation)  to  y (or P, ground truth)  is simply the difference between cross entropy and entropy:
+The KL divergence from  $$\hat{y}$$ (or Q, your observation)  to  y (or P, ground truth)  is simply the difference between cross entropy and entropy:
 
 $$ KL(y \vert\vert \hat{y})=\sum_iy_ilog\frac{1}{\hat{y}_i}−\sum_iy_ilog\frac{1}{y_i}=\sum_iy_ilog\frac{y_i}{\hat{y}_i} $$
 
