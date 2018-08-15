@@ -289,9 +289,9 @@ $$Mean Error + Irreducible Error = ME + noise = \frac{1}{n}\sum_{j=1}^n(E_j - A)
 
 $$A$$ is truth value of each input $$E_j$$
 
-$$E(\hat{\theta})$$ is the expectation of output from model with parameters $$\hat{\theta}$$
+$$E(\hat{\theta})$$ is the expectation of output from estimator with parameters $$\hat{\theta}$$
 
-$$\theta$$ is parameters of the estimator (statistic model)
+$$\theta$$ is parameters of the ground truth statistic model
 
 The bias is an error from erroneous assumptions in the learning algorithm. High bias can cause an algorithm to miss the relevant relations between features and target outputs (underfitting).
 
