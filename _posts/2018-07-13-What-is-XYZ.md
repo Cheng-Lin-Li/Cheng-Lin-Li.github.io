@@ -279,3 +279,55 @@ $$idf(t, D) = log \frac{N}{\|{d\in{D}: t\in{d}}\|}$$
 - $$\|{d\in{D}: t\in{d}}\|$$: number of documents where the term t appears. if the term is not in the corpus, this will lead to a division-by-zero. It is therefore common to adjust the denominator to 1+ $$\|{d\in{D}: t\in{d}}\|$$
 
 $$tfidf(t,d, D) = tf(t, d) * idf(t, D)$$
+
+## What is Bias?
+The bias is an error from erroneous assumptions in the learning algorithm. High bias can cause an algorithm to miss the relevant relations between features and target outputs (underfitting).
+
+Bias occurs when an algorithm has limited flexibility or is not complex enough produce underfit model that can't learn the true signal from a dataset.
+
+High bias, low variance algorithms train models that are consistent, but inaccurate on average. Small gap between training and test error but unacceptable high training error in high bias cases.
+
+Try a larger set of features to fix high bias.
+
+## What is Variance?
+
+The variance is an error from sensitivity to small fluctuations in the training set. High variance can cause an algorithm to model the random noise in the training data, rather than the intended outputs (overfitting).
+
+Variance refers to an algorithm's sensitivity to specific sets of training data. Algorithms are too complex produce overfit models that memorize the noise instead of the signal.
+
+High variance, low bias algorithms train models that are accurate on average, but inconsistent. Test error still decreasing as training set size increase but large gap between training and test error. Suggests larger training set will help.
+
+Try to get more training examples or try a smaller set of features to fix high variance.
+
+## What is Bias-Variance tradeoff?
+
+To get good predictions, you'll need to find a balance of bias and variance that minimizes "total error".
+
+$$Total Error = Bias^2 + Variance + Irreducible Error$$
+
+Irreducible error is "noise" that can't be reduced by algorithm. It can sometimes be reduced by better data cleaning.
+
+Low variance algorithms tend to be less complex, with simple or rigid underlying structure.
+
+Examples:
+
+Regression, Naive Bayes, Linear algorithms, parametric algorithms.
+
+Low bias algorithms tend to be more complex, with flexible underlying structure.
+
+Examples:
+
+Decision trees, nearest neighbors, non-linear algorithms, non-parametric algorithms.
+
+A proper machine learning workflow finds that optimal balance.
+
+- Separate training and test sets.
+- Trying appropriate algorithms
+- Fitting model parameters
+- Tunning impactful hyperparameters
+- Proper performance metrics
+- Systematic cross-validation
+
+Reference: [https://elitedatascience.com/bias-variance-tradeoff](https://elitedatascience.com/bias-variance-tradeoff)
+
+![Bias-VarianceTradeOff](https://34tzkp3af7ck1k675g1stf6n-wpengine.netdna-ssl.com/wp-content/uploads/2017/06/Bias-vs.-Variance-v4-chart.png)
