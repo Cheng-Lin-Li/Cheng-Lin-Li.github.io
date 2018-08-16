@@ -363,11 +363,35 @@ Reference:
 
 
 ## What is Recurrent Neural Networkn (RNN)?
-A recurrent neural network (RNN) is a class of artificial neural network where connections between nodes form a directed graph along a sequence. This allows it to exhibit dynamic temporal behavior for a time sequence. Unlike feedforward neural networks, RNNs can use their internal state (memory) to process sequences of inputs. This makes them applicable to tasks such as unsegmented, connected handwriting recognition[1] or speech recognition.[2][3] 
+A recurrent neural network (RNN) is a class of artificial neural network where connections between nodes form a directed graph along a sequence. This allows it to exhibit dynamic temporal behavior for a time sequence. This allows it to exhibit dynamic temporal behavior for a time sequence. RNNs can use their internal state (memory) to process sequences of inputs. 
+
+In other neural networks, all the inputs are independent of each other. But in RNN, all the inputs are related to each other. RNNs are called recurrent because they perform the prediction task for every element of a sequence, with the output being depended on the previous computations.
 
 ## What are main gates in Long Short-Term Memory (LSTM)?
+
+Long short-term memory (LSTM) units are units of a recurrent neural network (RNN). An RNN composed of LSTM units is often called an LSTM network. A common LSTM unit is composed of a cell, an input gate, an output gate and a forget gate. The cell remembers values over arbitrary time intervals and the three gates regulate the flow of information into and out of the cell. 
 
 
 ## What is (Support Vector Machine) SVM?
 
+SVM is supervised learning models with associated learning algorithms that analyze data used for classification and regression analysis. 
 
+### Hard-margin
+If the training data is linearly separable, we can select two parallel hyperplanes that separate the two classes of data, so that the distance between them is as large as possible. The region bounded by these two hyperplanes is called the "margin", and the maximum-margin hyperplane is the hyperplane that lies halfway between them. 
+
+An important consequence of this geometric description is that the max-margin hyperplane is completely determined by those $$\overrightarrow{x_i}$$ which lie nearest to it. These $$\overrightarrow{x_i}$$ are called support vectors. 
+
+### Soft-margin
+To extend SVM to cases in which the data are not linearly separable, we introduce the hinge loss function:
+
+$$max(0, 1-y_i(\overrightarrow{w}*\overrightarrow{x_i}-b))$$ is the current output.
+
+If $$\overrightarrow{x_i}$$ lies on the correct side of the margin, the loss function is zero.
+
+Note that $y_i$ is the ith target(i.e., in this case, 1 or -1), and $$(\overrightarrow{w}*\overrightarrow{x_i}-b)$$
+
+We then wish to minimize
+
+$$[\frac{1}{n}\sum_{i=1}^n max(0, 1-y_i(\overrightarrow{w}*\overrightarrow{x_i}-b))] + \lambda \|\overrightarrow{w}^2\|$$
+
+where the parameter $$\lambda$$ determines the tradeoff between increasing the margin-size and ensuring that the $$\overrightarrow{x_i}$$ lie on the correct side of the margin.
