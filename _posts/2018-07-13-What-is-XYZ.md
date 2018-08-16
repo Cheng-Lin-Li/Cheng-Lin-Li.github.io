@@ -284,7 +284,7 @@ $$tfidf(t,d, D) = tf(t, d) * idf(t, D)$$
 
 The bias of an estimator $$\hat{\theta_m}$$ to a statistic model $$\theta$$ is:
 
-$$Bias(\hat{theta_m}) = E(\hat{\theta_m}) - \theta$$
+$$Bias(\hat{\theta_m}) = E(\hat{\theta_m}) - \theta$$
 
 $$\theta$$ is the true underlying value of $$\theta$$ used to define the data generating distribution.
 
