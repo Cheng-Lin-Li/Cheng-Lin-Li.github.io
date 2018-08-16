@@ -286,13 +286,11 @@ The bias of an estimator $$\hat{\theta}$$ to a statistic model $$\theta$$ is:
 
 $$B_\theta(\hat{theta}) = E(\hat{\theta}) - \theta$$
 
-### MSD: Mean Signed difference, Deviation or error
+### Mean Signed difference, Deviation or error (MSD)
 
 $$ B = Mean Signed Difference + Irreducible Error = MSD(\hat{\theta}) + noise = \frac{1}{n}\sum_{j=1}^n(\hat{\theta_j} - \theta_i) + noise$$
 
 In a simulation experiment concerning the properties of an estimator, the bias of the estimator may be assessed using the mean signed difference (ignore the noise for estimation purpose).
-
-$$A$$ is truth value of each input $$E_j$$
 
 $$\theta$$ is parameters of the ground truth statistic model
 
@@ -323,7 +321,12 @@ Try to get more training examples, highly regularized, highly pruned decision, l
 To get good predictions, you'll need to find a balance of bias and variance that minimizes "total error".
 
 ### What is Bias-Variance decomposition of error?
-$$Total Error = Bias^2 + Variance + Irreducible Error$$
+Assume that $$Y = f(X) + \epsilon = 0$$ where $$E(\epsilon) = 0$$ and $$Var(\epsilon) = \delta_{\epsilon}^2, we can derive an expression for the expected prediction error of a regression fit $$\hat{f}(X)$$ at an input point $$X = x_0$$, using squared-error loss:
+
+$$Err(x_0) = E[(Y-\hat{f}(x_0))^2 \| X = x_0]
+= [E\hat{f}(x_0)-f(x_0)] + E[\hat{f}(x_0)-E\hat{f}(x_0)]^2 + \delta_{\epsilon}^2
+= Bias^2(\hat{f}(x_0)) + Var(\hat{f}(x_0)) + Irreducible Error$$
+= Bias^2 + Variance + Irreducible Error$$
 
 Irreducible error is "noise" that can't be reduced by algorithm. It can sometimes be reduced by better data cleaning.
 
@@ -359,8 +362,8 @@ Reference:
 
 
 
-## What is Recurrent Neural Network?
-
+## What is Recurrent Neural Networkn (RNN)?
+A recurrent neural network (RNN) is a class of artificial neural network where connections between nodes form a directed graph along a sequence. This allows it to exhibit dynamic temporal behavior for a time sequence. Unlike feedforward neural networks, RNNs can use their internal state (memory) to process sequences of inputs. This makes them applicable to tasks such as unsegmented, connected handwriting recognition[1] or speech recognition.[2][3] 
 
 ## What are main gates in Long Short-Term Memory (LSTM)?
 
