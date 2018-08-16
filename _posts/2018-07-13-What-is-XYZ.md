@@ -282,21 +282,19 @@ $$tfidf(t,d, D) = tf(t, d) * idf(t, D)$$
 
 ## What is Bias?
 
-The bias of an estimator $$\hat{\theta}$$ to a statistic model $$\theta$$ is:
+The bias of an estimator $$\hat{\theta_m}$$ to a statistic model $$\theta$$ is:
 
-$$B_\theta(\hat{theta}) = E(\hat{\theta}) - \theta$$
+$$Bias(\hat{theta_m}) = E(\hat{\theta_m}) - \theta$$
+
+$$\theta$$ is the true underlying value of $$\theta$$ used to define the data generating distribution.
+
+$$E(\hat{\theta_m})$$ is the expectation over the data (seen as samples from a random variable) by an estimator $$\hat{\theta_m}.
+
+In a simulation experiment concerning the properties of an estimator, the bias of the estimator may be assessed using the mean signed difference (ignore the noise for estimation purpose).
 
 ### Mean Signed difference, Deviation or error (MSD)
 
 $$ B = Mean Signed Difference + Irreducible Error = MSD(\hat{\theta}) + noise = \frac{1}{n}\sum_{j=1}^n(\hat{\theta_j} - \theta_i) + noise$$
-
-In a simulation experiment concerning the properties of an estimator, the bias of the estimator may be assessed using the mean signed difference (ignore the noise for estimation purpose).
-
-$$\theta$$ is parameters of the ground truth statistic model
-
-$$\hat{\theta}$$ is an estimator of $$\theta$$ based on any observed data x.
-
-$$E(\hat{\theta})$$ is the expectation of output from estimator with parameters $$\hat{\theta}$$
 
 The bias is an error from erroneous assumptions in the learning algorithm. High bias can cause an algorithm to miss the relevant relations between features and target outputs (underfitting).
 
@@ -309,6 +307,13 @@ Try a larger set of features, less regularization, unpruned trees, small-k KNN t
 ## What is Variance?
 
 The variance is an error from sensitivity to small fluctuations in the training set. High variance can cause an algorithm to model the random noise in the training data, rather than the intended outputs (overfitting).
+
+The variance of an estimator is simply the variance
+
+$$Var(\hat{\theta}) = \frac{\sum(x_i-\bar{x})^2}{n}$$ (Machine Learning usually uses bias Variance)
+$$Var(\hat{\theta}) = \frac{\sum(x_i-\bar{x})^2}{n-1}$$ (Statistic usually uses unbiased Variance)
+
+Alternately, the square root of the variance is called the standard error, denoted $$SE(\hat{\theta})$$.
 
 Variance refers to an algorithm's sensitivity to specific sets of training data. Algorithms are too complex produce overfit models that memorize the noise instead of the signal.
 
