@@ -32,13 +32,13 @@ The function we want to minimize or maximize is called the objective function, o
 
 ## Loss function 
 It is usually a function defined on a data point, prediction and label, and measures the penalty. For example:
-square loss $$l(f(x_i\|θ),y_i)=(f(x_i\|θ)−y_i)^2$$, used in linear regression
-hinge loss $$l(f(x_i\|θ),y_i)=max(0,1−f(x_i\|θ)y_i)$$, used in SVM
-0/1 loss $$l(f(x_i\|θ),y_i)=1⟺f(x_i\|θ)≠y_i$$, used in theoretical analysis and definition of accuracy
+square loss $$l(f(x_i\vert θ),y_i)=(f(x_i\vert θ)−y_i)^2$$, used in linear regression
+hinge loss $$l(f(x_i\vert θ),y_i)=max(0,1−f(x_i\vert θ)y_i)$$, used in SVM
+0/1 loss $$l(f(x_i\vert θ),y_i)=1⟺f(x_i\vert θ)≠y_i$$, used in theoretical analysis and definition of accuracy
 
 ## Cost function
 It is usually more general. It might be a sum of loss functions over your training set plus some model complexity penalty (regularization). For example:
-Mean Squared Error $$MSE(θ)=\frac{1}{N} \sum_{i=1}^n(f(x_i\|θ)−y_i)^2$$
+Mean Squared Error $$MSE(θ)=\frac{1}{N} \sum_{i=1}^n(f(x_i\vert θ)−y_i)^2$$
 SVM cost function $$SVM(θ)=∥θ∥^2+C\sum_{i=1}^nξ_i$$ (there are additional constraints connecting ξi with C and with training set)
 
 ## Objective function
@@ -72,7 +72,7 @@ In binary classification, where the number of classes M equals 2, cross-entropy 
 
 $$Binary Cross Entropy = −(ylog(p)+(1−y)log(1−p))$$
 
-$$Cross-Entropy = -\sum_{c=1}^M y_{o,c}log(p_{o,c})$$
+$$Cross Entropy = -\sum_{c=1}^M y_{o,c}log(p_{o,c})$$
 
 
 M - number of classes (dog, cat, fish)
@@ -101,7 +101,7 @@ A regression model that uses L1 regularization technique is called Lasso Regress
 Lasso Regression (Least Absolute Shrinkage and Selection Operator) adds “absolute value of magnitude” of coefficient as penalty term to the loss function.
 Lasso shrinks the less important feature’s coefficient to zero thus, removing some feature altogether. So, this works well for feature selection in case we have a huge number of features.
 
-$$w^* = \underset{w}argmin\sum_j^n (t(x_i)-\sum_i^k w_i h_i(x_j))^2 + \lambda \sum_{i=1}^k \|w_i\|$$
+$$w^* = \underset{w}argmin\sum_j^n (t(x_i)-\sum_i^k w_i h_i(x_j))^2 + \lambda \sum_{i=1}^k \vert w_i\vert$$
 
 ### What is L2 regularizer?
 Reference: [Differences between L1 and L2 as Loss Function and Regularization](http://www.chioka.in/differences-between-l1-and-l2-as-loss-function-and-regularization/)
@@ -273,10 +273,10 @@ $$tf(t,d) = \frac{f_{t,d}}{\sum_{t'\in{d}}f_{t',d}} $$
 
 The inverse document frequency is a measure of how much information the word provides, that is, whether the term is common or rare across all documents.
 
-$$idf(t, D) = log \frac{N}{\|{d\in{D}: t\in{d}}\|}$$
+$$idf(t, D) = log \frac{N}{\vert {d\in{D}: t\in{d}} \vert}$$
 
 - N: total number of documents in the corpus N = \|D\|
-- $$\|{d\in{D}: t\in{d}}\|$$: number of documents where the term t appears. if the term is not in the corpus, this will lead to a division-by-zero. It is therefore common to adjust the denominator to 1+ $$\|{d\in{D}: t\in{d}}\|$$
+- $$\vert {d\in{D}: t\in{d}}\vert$$: number of documents where the term t appears. if the term is not in the corpus, this will lead to a division-by-zero. It is therefore common to adjust the denominator to 1+ $$\|{d\in{D}: t\in{d}}\|$$
 
 $$tfidf(t,d, D) = tf(t, d) * idf(t, D)$$
 
@@ -321,10 +321,10 @@ Try to get more training examples, highly regularized, highly pruned decision, l
 To get good predictions, you'll need to find a balance of bias and variance that minimizes "total error".
 
 ### What is Bias-Variance decomposition of error?
-Assume that $$Y = f(X) + \epsilon = 0$$ where $$E(\epsilon) = 0$$ and $$Var(\epsilon) = \delta_{\epsilon}^2$$, we can derive an expression for the expected prediction error of a regression fit $$\hat{f}(X)$$ at an input point $$X = x_0$$, using squared-error loss:
+Assume that $$Y = f(X) + \epsilon = 0$$ where $$E(\epsilon) = 0$$ and $$Var(\epsilon) = \sigma_{\epsilon}^2$$, we can derive an expression for the expected prediction error of a regression fit $$\hat{f}(X)$$ at an input point $$X = x_0$$, using squared-error loss:
 
-$$Err(x_0) = E[(Y-\hat{f}(x_0))^2 \| X = x_0]\\
-= [E\hat{f}(x_0)-f(x_0)] + E[\hat{f}(x_0)-E\hat{f}(x_0)]^2 + \delta_{\epsilon}^2\\
+$$Err(x_0) = E[(Y-\hat{f}(x_0))^2 \vert X = x_0]\\
+= [E\hat{f}(x_0)-f(x_0)] + E[\hat{f}(x_0)-E\hat{f}(x_0)]^2 + \sigma_{\epsilon}^2\\
 = Bias^2(\hat{f}(x_0)) + Var(\hat{f}(x_0)) + Irreducible Error\\
 = Bias^2 + Variance + Irreducible Error$$
 
