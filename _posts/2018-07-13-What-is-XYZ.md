@@ -321,7 +321,7 @@ Try to get more training examples, highly regularized, highly pruned decision, l
 To get good predictions, you'll need to find a balance of bias and variance that minimizes "total error".
 
 ### What is Bias-Variance decomposition of error?
-Assume that $$Y = f(X) + \epsilon = 0$$ where $$E(\epsilon) = 0$$ and $$Var(\epsilon) = \delta_{\epsilon}^2, we can derive an expression for the expected prediction error of a regression fit $$\hat{f}(X)$$ at an input point $$X = x_0$$, using squared-error loss:
+Assume that $$Y = f(X) + \epsilon = 0$$ where $$E(\epsilon) = 0$$ and $$Var(\epsilon) = \delta_{\epsilon}^2$$, we can derive an expression for the expected prediction error of a regression fit $$\hat{f}(X)$$ at an input point $$X = x_0$$, using squared-error loss:
 
 $$Err(x_0) = E[(Y-\hat{f}(x_0))^2 \| X = x_0]
 = [E\hat{f}(x_0)-f(x_0)] + E[\hat{f}(x_0)-E\hat{f}(x_0)]^2 + \delta_{\epsilon}^2
