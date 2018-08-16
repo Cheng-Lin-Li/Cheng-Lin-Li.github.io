@@ -288,7 +288,7 @@ $$Bias(\hat{theta_m}) = E(\hat{\theta_m}) - \theta$$
 
 $$\theta$$ is the true underlying value of $$\theta$$ used to define the data generating distribution.
 
-$$E(\hat{\theta_m})$$ is the expectation over the data (seen as samples from a random variable) by an estimator $$\hat{\theta_m}.
+$$E(\hat{\theta_m})$$ is the expectation over the data (seen as samples from a random variable) by an estimator $$\hat{\theta_m}$$.
 
 In a simulation experiment concerning the properties of an estimator, the bias of the estimator may be assessed using the mean signed difference (ignore the noise for estimation purpose).
 
@@ -310,7 +310,8 @@ The variance is an error from sensitivity to small fluctuations in the training 
 
 The variance of an estimator is simply the variance
 
-$$Var(\hat{\theta}) = \frac{\sum(x_i-\bar{x})^2}{n}$$ (Machine Learning usually uses bias Variance)
+$$Var(\hat{\theta}) = \frac{\sum(x_i-\bar{x})^2}{n}$$ (Machine Learning usually uses biased Variance)
+
 $$Var(\hat{\theta}) = \frac{\sum(x_i-\bar{x})^2}{n-1}$$ (Statistic usually uses unbiased Variance)
 
 Alternately, the square root of the variance is called the standard error, denoted $$SE(\hat{\theta})$$.
