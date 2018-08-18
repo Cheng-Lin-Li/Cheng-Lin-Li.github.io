@@ -6,6 +6,17 @@ permalink: /project/
 
 How to start a project in machine learning? How can I leverage all those techniques into real world challenge? There are my projects and competitions Jupyter notebooks for you as a starting points.
 
+<!-- more -->
+
+---
+Table of content:
+
+{: class="table-of-content"}
+* TOC
+{:toc}
+
+---
+
 
 ##  1. [Enlighten Segmentation, July 2018](https://github.com/Cheng-Lin-Li/SegCaps)
       
@@ -46,13 +57,18 @@ Reference Paper: [https://arxiv.org/abs/1703.06870](https://arxiv.org/abs/1703.0
 The original model clone from: [https://github.com/matterport/Mask_RCNN](https://github.com/matterport/Mask_RCNN)
   
   
-##  3. Stock Price Forecasting by Stock Selections: Python/Tensorflow
+##  3. Sentiment classifications for Hotel reviews by Deceptive Opinions: Python
     
-This is a project which implemented Neural Network and Long Short Term Memory (LSTM) for stock price predictions. These models beat DJIA performance based on 1 quarter of weekly price, return rate of the DJIA components plus assistant indices to predict the highest increasing rate stock for the next quarter.
+This is a project to implement sentiment classifiers which implemented Naive Bayes (with Laplace smoothing), Vanilla and Averaged Perception models to classify the full text of the hotel reviews corpus, together with their truthful/deceptive and positive/negative labels.
 
-Project Report: [Multi-Layer Perceptron (MLP), and Long-Short Term Memory (LSTMs) for stock price forecasting](https://github.com/Cheng-Lin-Li/MachineLearning/blob/master/TensorFlow/ProjectReport.pdf)
+Github address: 
 
-Github address: [https://github.com/Cheng-Lin-Li/MachineLearning/tree/master/TensorFlow](https://github.com/Cheng-Lin-Li/MachineLearning/tree/master/TensorFlow)
+[Naive Bayes](https://github.com/Cheng-Lin-Li/Natural-Language-Processing/tree/master/NaiveBayes)
+
+[Perceptron](https://github.com/Cheng-Lin-Li/Natural-Language-Processing/tree/master/Perceptron)
+
+Reference:
+[Deceptive Opinion Spam Corpus v1.4](http://myleott.com/op_spam/)
 
 ##  4. [Market Trend Prediction with Social Media Listening: Python/Keras/Facebook Graph API/Twitter API/ACHE Crawler/Beautifulsoup](https://github.com/Cheng-Lin-Li/Market-Trend-Prediction/blob/master/source/Dow%20Jones%20Industrial%20Average%20Prediction%20with%20Media%20Channel%20Info-with%20Social%20Info.ipynb)
       
@@ -88,3 +104,11 @@ Github address: [https://github.com/Cheng-Lin-Li/MachineLearning/tree/master/Com
 This task leverages Content Based Filtering and Singular Value decomposition (SVD) to perform recommendation system build up.
 
 Jupyter Notebook: [https://github.com/Cheng-Lin-Li/MachineLearning/blob/master/Competition/McKinseyAnalyticsRecommendation/Recommendation.ipynb](https://github.com/Cheng-Lin-Li/MachineLearning/blob/master/Competition/McKinseyAnalyticsRecommendation/Recommendation.ipynb)
+
+##  8. [Stock Price Forecasting by Stock Selections: Python/Tensorflow]((https://github.com/Cheng-Lin-Li/MachineLearning/tree/master/TensorFlow))
+    
+This is a project which implemented Neural Network and Long Short Term Memory (LSTM) for stock price predictions. These models beat DJIA performance based on 1 quarter of weekly price, return rate of the DJIA components plus assistant indices to predict the highest increasing rate stock for the next quarter.
+
+Project Report: [Multi-Layer Perceptron (MLP), and Long-Short Term Memory (LSTMs) for stock price forecasting](https://github.com/Cheng-Lin-Li/MachineLearning/blob/master/TensorFlow/ProjectReport.pdf)
+
+Github address: [https://github.com/Cheng-Lin-Li/MachineLearning/tree/master/TensorFlow](https://github.com/Cheng-Lin-Li/MachineLearning/tree/master/TensorFlow)
