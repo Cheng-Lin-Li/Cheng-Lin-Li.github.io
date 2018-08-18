@@ -119,10 +119,6 @@ Two common ways we'll train a model: tree-based logical rules developed accordin
 
 It's worth noting that not all datasets are affected equally by class imbalance. Generally, for easy classification problems in which there's a clear separation in the data, class imbalance doesn't impede on the model's ability to learn effectively. However, datasets that are inherently more difficult to learn from see an amplification in the learning challenge when a class imbalance is introduced.
 
-One of the simplest ways to address the class imbalance is to simply "provide a weight for each class" which places more emphasis on the minority classes such that the end result is a classifier which can learn equally from all classes.
-
-Another approach towards dealing with a class imbalance is to simply alter the dataset to remove such an imbalance. 
-
 ### What are metrics to evaluate a model for imbalance data
 Accuracy is not a good metrics for imbalance data. The model always predict the negative (majority) cases will get high accuracy.
 
@@ -133,6 +129,27 @@ Below are better metrics:
 2. Precision and recall
 
 3. F1 or $$F_{\beta}$$
+
+We can roughly classify the approaches into three major categories: cost function based approaches, sampling based approaches and turning the task to Anomaly detections.
+
+### Cost function based approaches
+Reference: [class-imbalance-problem](http://www.chioka.in/class-imbalance-problem/)
+
+One of the simplest ways to address the class imbalance is to simply "provide a weight for each class" which places more emphasis on the minority classes such that the end result is a classifier which can learn equally from all classes.
+
+The intuition behind cost function based approaches is that if we think one false negative is worse than one false positive, we will count that one false negative as, e.g., 100 false negatives instead. For example, if 1 false negative is as costly as 100 false positives, then the machine learning algorithm will try to make fewer false negatives compared to false positives (since it is cheaper). 
+
+### Sampling based approaches
+
+Another approach towards dealing with a class imbalance is to simply alter the dataset to remove such an imbalance.
+
+This can be roughly classified into three categories:
+
+1. Oversampling, by adding more of the minority class so it has more effect on the machine learning algorithm
+
+2. Undersampling, by removing some of the majority class so it has less effect on the machine learning algorithm
+
+3. Hybrid, a mix of oversampling and undersampling
 
 ### Oversampling
 
@@ -217,22 +234,8 @@ For each sample in the class to be under-sampled, the nearest-neighbors are comp
 
 This is a similar approach as Tomek's links in the respect that we're not necessarily focused on actually achieving a class balance, we're simply looking to remove noisy observations in an attempt to make for an easier classification problem.
 
-## What is Receiver Operating Characteristics (ROC) curve?
-Reference: [imbalanced data](https://www.jeremyjordan.me/imbalanced-data/)
-
-An ROC curve visualizes an algorithm's ability to discriminate the positive class from the rest of the data.
-We'll do this by plotting the True Positive Rate against the False Positive Rate for varying prediction thresholds.
-
-$$TPR = \frac{True Positives}{True Positives + False Negatives}$$
-
-$$FPR = \frac{False Positives}{False Positives + True Negatives}$$
-
-## What is the area under the curve (AUC)?
-Reference: [imbalanced data](https://www.jeremyjordan.me/imbalanced-data/)
-
-The area under the curve (AUC) is a single-value metric for which attempts to summarize an ROC curve to evaluate the quality of a classifier.
-This metric approximates the area under the ROC curve for a given classifier.
-The ideal curve hugs the upper left hand corner as closely as possible, giving us the ability to identify all true positives while avoiding false positives; this ideal model would have an AUC of 1. On the flipside, if your model was no better than a random guess, your TPR and FPR would increase in parallel to one another, corresponding with an AUC of 0.5.
+### Hybrid approach
+By combining undersampling and oversampling approaches, we get the advantages but also drawbacks of both approaches as illustrated above, which is still a tradeoff.
 
 ## What is Anomaly Detection?
 Reference: 
@@ -259,6 +262,23 @@ example:
 $$x_{new1}$$ = log($$x_1$$)
 
 $$x_{new2}$$ = $$x_2^{0.05}$$ 
+
+## What is Receiver Operating Characteristics (ROC) curve?
+Reference: [imbalanced data](https://www.jeremyjordan.me/imbalanced-data/)
+
+An ROC curve visualizes an algorithm's ability to discriminate the positive class from the rest of the data.
+We'll do this by plotting the True Positive Rate against the False Positive Rate for varying prediction thresholds.
+
+$$TPR = \frac{True Positives}{True Positives + False Negatives}$$
+
+$$FPR = \frac{False Positives}{False Positives + True Negatives}$$
+
+## What is the area under the curve (AUC)?
+Reference: [imbalanced data](https://www.jeremyjordan.me/imbalanced-data/)
+
+The area under the curve (AUC) is a single-value metric for which attempts to summarize an ROC curve to evaluate the quality of a classifier.
+This metric approximates the area under the ROC curve for a given classifier.
+The ideal curve hugs the upper left hand corner as closely as possible, giving us the ability to identify all true positives while avoiding false positives; this ideal model would have an AUC of 1. On the flipside, if your model was no better than a random guess, your TPR and FPR would increase in parallel to one another, corresponding with an AUC of 0.5.
 
 ## What is p value?
 
