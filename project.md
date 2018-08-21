@@ -57,7 +57,7 @@ Reference Paper: [https://arxiv.org/abs/1703.06870](https://arxiv.org/abs/1703.0
 The original model clone from: [https://github.com/matterport/Mask_RCNN](https://github.com/matterport/Mask_RCNN)
   
   
-##  3. Sentiment classifications for Hotel reviews by Deceptive Opinions: Python
+##  3. Sentiment Classifications for Hotel reviews by Deceptive Opinions: Python
     
 This is a project to implement sentiment classifiers which implemented Naive Bayes (with Laplace smoothing), Vanilla and Averaged Perception models to classify the full text of the hotel reviews corpus, together with their truthful/deceptive and positive/negative labels.
 
