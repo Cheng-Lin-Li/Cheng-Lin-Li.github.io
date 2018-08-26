@@ -312,9 +312,9 @@ $$E(\hat{\theta_m})$$ is the expectation over the data (seen as samples from a r
 
 In a simulation experiment concerning the properties of an estimator, the bias of the estimator may be assessed using the mean signed difference (ignore the noise for estimation purpose).
 
-### Mean Signed difference, Deviation or error (MSD)
+### Mean Signed Difference, Deviation or Error (MSD)
 
-$$ B = Mean Signed Difference + Irreducible Error = MSD(\hat{\theta}) + noise = \frac{1}{n}\sum_{j=1}^n(\hat{\theta_j} - \theta_i) + noise$$
+$$ B = Mean Signed Diviation/Difference + Irreducible Error = MSD(\hat{\theta}) + noise = \frac{1}{n}\sum_{j=1}^n(\hat{\theta_j} - \theta_i) + noise$$
 
 The bias is an error from erroneous assumptions in the learning algorithm. High bias can cause an algorithm to miss the relevant relations between features and target outputs (underfitting).
 
@@ -421,3 +421,43 @@ We then wish to minimize
 $$[\frac{1}{n}\sum_{i=1}^n max(0, 1-y_i(\overrightarrow{w}*\overrightarrow{x_i}-b))] + \lambda \|\overrightarrow{w}^2\|$$
 
 where the parameter $$\lambda$$ determines the tradeoff between increasing the margin-size and ensuring that the $$\overrightarrow{x_i}$$ lie on the correct side of the margin.
+
+
+## What is Post-of-Speech (POS) Tagging in NLP?
+
+### How to do the POS tagging?
+#### Use of hidden Markov models
+#### Dynamic programming methods
+#### Unsupervised taggers
+#### Other taggers and methods
+include the Viterbi algorithm, Brill tagger, Constraint Grammar, and the Baum-Welch algorithm (also known as the forward-backward algorithm)
+
+Hidden Markov model and visible Markov model taggers can both be implemented using the Viterbi algorithm.
+
+### What is the loss function in mathematics?
+
+## What is Conditional Random Field?
+
+Reference:
+[Overview of Conditional Random Fields](https://medium.com/ml2vec/overview-of-conditional-random-fields-68a2a20fa541)
+
+[Introduction to Conditional Random Fields](http://blog.echen.me/2012/01/03/introduction-to-conditional-random-fields/)
+
+### What is the meaning of Conditional in this algorithm?
+
+### How CRFs differ from Hidden Markov Models
+
+### What is the relationship between Hidden Markov Model and Conditional Random Field?
+
+## What is Viterbi algorithm
+
+
+## What is Jaccard Similarity
+
+## What is MinHash
+
+
+## What is Locality Sensitive Hashing(LSH)
+
+
+## What is Shingling
