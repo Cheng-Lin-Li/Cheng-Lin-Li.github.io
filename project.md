@@ -18,7 +18,7 @@ Table of content:
 ---
 
 
-##  1. [Enlighten Segmentation, July 2018](https://github.com/Cheng-Lin-Li/SegCaps)
+##  1. [Enlighten Segmentation, July 2018](https://cheng-lin-li.github.io/SegCaps/)
       
 This is a project which build up a pipeline line to enable research on image segmentation task based on Capsule Nets or SegCaps from scratch by Microsoft Common Objects in COntext (MS COCO) 2D image dataset.
 
