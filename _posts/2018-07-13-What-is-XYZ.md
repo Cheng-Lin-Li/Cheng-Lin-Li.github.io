@@ -30,7 +30,9 @@ In short, a loss function is a part of a cost function which is a type of an obj
 From section 4.3 in "Deep Learning" - Ian Goodfellow, Yoshua Bengio, Aaron Courville http://www.deeplearningbook.org/
 The function we want to minimize or maximize is called the objective function, or criterion. When we are minimizing it, we may also call it the cost function, loss function, or error function.
 
-## Loss function 
+## Loss function
+A loss function is a way to map the performance of our model into a real number. It measures how well the model is performing its task.
+
 It is usually a function defined on a data point, prediction and label, and measures the penalty. For example:
 square loss $$l(f(x_i\vert θ),y_i)=(f(x_i\vert θ)−y_i)^2$$, used in linear regression
 hinge loss $$l(f(x_i\vert θ),y_i)=max(0,1−f(x_i\vert θ)y_i)$$, used in SVM
