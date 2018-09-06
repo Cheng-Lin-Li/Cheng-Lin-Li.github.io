@@ -382,12 +382,32 @@ A proper machine learning workflow finds that optimal balance.
 
 ![Bias-VarianceTradeOff](http://scott.fortmann-roe.com/docs/docs/BiasVariance/biasvariance.png)
 
+
+![training and validation error](https://www.dataquest.io/blog/content/images/2017/12/add_data.png)
+
+
+![High bias and low bias case](https://www.dataquest.io/blog/content/images/2017/12/low_high_bias.png)
+
+
+![high variance and low variance case](https://www.dataquest.io/blog/content/images/2017/12/low_high_var.png)
+
+Diagnostic: 
+
+–Variance: Training error will be much lower than test error. 
+
+–Bias: Training error will also be high.
+
+
+
 Reference: 
 
 1. [https://elitedatascience.com/bias-variance-tradeoff](https://elitedatascience.com/bias-variance-tradeoff)
 
 2. [Understanding the Bias-Variance Tradeoff ](http://scott.fortmann-roe.com/docs/BiasVariance.html)
 
+3. [Machine Learning advice.pdf](http://cs229.stanford.edu/materials/ML-advice.pdf)
+
+4. [Learning Curves for Machine Learning](https://www.dataquest.io/blog/learning-curves-machine-learning/)
 
 
 ## What is Recurrent Neural Networkn (RNN)?
