@@ -230,9 +230,11 @@ Which makes sense: a rectifying linear unit is zero for half of its input, so yo
 ___
 ####  $$F_{\beta}$$ score: An easy to combine precision and recall measures
 >
->$$F_{\beta} = \frac{(1+\beta^2)(precision*recall)}{(\beta^2*precision+recall)}$$
+>$$F_{\beta} = \frac{(1+\beta^2)(precision*recall)}{(\beta^2*precision+recall)} = \frac{1}{\frac{1}{\beta^2+1}*\frac{1}{precision}+\frac{\beta^2}{\beta^2+1}*\frac{1}{recall}}$$
 >
->$$F1 = \frac{2*(precision*recall)}{(precision+recall)}$$
+>$$\beta < 1$$ lends more weight to precision, while $$\beta > 1$$ favors recall ($$\beta -> 0$$ considers only precision, $$\beta -> inf$$ only recall)
+>
+>$$F1 = \frac{2*(precision*recall)}{(precision+recall)} = \frac{1}{\frac{1}{2}*\frac{1}{precision}+\frac{1}{2}*\frac{1}{recall}}$$
 
 ___
 #### Symmetric Mean Absolute Percent Error (SMAPE)
