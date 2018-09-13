@@ -444,6 +444,22 @@ $$[\frac{1}{n}\sum_{i=1}^n max(0, 1-y_i(\overrightarrow{w}*\overrightarrow{x_i}-
 
 where the parameter $$\lambda$$ determines the tradeoff between increasing the margin-size and ensuring that the $$\overrightarrow{x_i}$$ lie on the correct side of the margin.
 
+## What is Entropy in discrete?
+
+$$H(p) = -\sum_x p(x) log p(x)$$
+
+## What is Cross Entropy in discrete?
+
+$$H(p, q) = -\sum_x p(x) log q(x)$$
+or by definition:
+$$H(p, q) = H(p) + D_{KL}(p \vert\vert q)$$
+
+
+## What is the difference between Cross Entropy and Entropy? 
+
+The KL divergence from  $$\hat{y}$$ (or Q, your observation)  to  y (or P, ground truth)  is simply the difference between cross entropy and entropy:
+
+$$ KL(y \vert\vert \hat{y})=\sum_iy_ilog\frac{1}{\hat{y}_i}−\sum_iy_ilog\frac{1}{y_i}=\sum_iy_ilog\frac{y_i}{\hat{y}_i} $$
 
 ## What is Post-of-Speech (POS) Tagging in NLP?
 
