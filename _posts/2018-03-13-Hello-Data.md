@@ -341,7 +341,7 @@ In the context of machine learning, $$KL(P\vert\vert Q)$$ is often called the in
 2. [https://www.cs.cmu.edu/~epxing/Class/10701/slides/lecture16-VC.pdf](https://www.cs.cmu.edu/~epxing/Class/10701/slides/lecture16-VC.pdf)
 3. [http://cs229.stanford.edu/notes/cs229-notes4.pdf](http://cs229.stanford.edu/notes/cs229-notes4.pdf)
 
-  Definition: The Vapnik-Chervonenkis dimension, VC(H), of hypothesis space Hdefined over instance space Xis the size of the largest finite subsetof Xshattered by H. If arbitrarily large finite sets of Xcan be shattered by H, then VC(H) is defined as infinite.
+  Definition: The Vapnik-Chervonenkis dimension, VC(H), of hypothesis space H defined over instance space X is the size of the largest finite subset of X shattered by H. If arbitrarily large finite sets of X can be shattered by H, then VC(H) is defined as infinite.
 
   VC dimension is a measure of the capacity (complexity, expressive power, richness, or flexibility) of a space of functions that can be learned by a statistical classification algorithm. It is defined as the cardinality of the largest set of points that the algorithm can shatter.
 
