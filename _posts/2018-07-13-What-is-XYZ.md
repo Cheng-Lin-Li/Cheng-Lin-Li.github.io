@@ -99,16 +99,20 @@ def CrossEntropy(yHat, y):
 ## Optimization of model
 ### What is L1 regularizer?
 Reference: [Differences between L1 and L2 as Loss Function and Regularization](http://www.chioka.in/differences-between-l1-and-l2-as-loss-function-and-regularization/)
-A regression model that uses L1 regularization technique is called Lasso Regression
-Lasso Regression (Least Absolute Shrinkage and Selection Operator) adds “absolute value of magnitude” of coefficient as penalty term to the loss function.
+
+A regression model that uses L1 regularization technique is called Lasso Regression.
+
+Lasso Regression (Least Absolute Shrinkage and Selection Operator)  <span style="color:red">adds “absolute value of magnitude” of coefficient as penalty term to the loss function</span>.
 Lasso shrinks the less important feature’s coefficient to zero thus, removing some feature altogether. So, this works well for feature selection in case we have a huge number of features.
 
 $$w^* = \underset{w}argmin\sum_j^n (t(x_i)-\sum_i^k w_i h_i(x_j))^2 + \lambda \sum_{i=1}^k \vert w_i\vert$$
 
 ### What is L2 regularizer?
 Reference: [Differences between L1 and L2 as Loss Function and Regularization](http://www.chioka.in/differences-between-l1-and-l2-as-loss-function-and-regularization/)
-A regression model which uses L2 is called Ridge Regression
-Ridge regression adds “squared magnitude” of coefficient as penalty term to the loss function
+
+A regression model which uses L2 is called Ridge Regression.
+
+Ridge regression <span style="color:red">adds “squared magnitude” of coefficient as penalty term to the loss function</span>.
 
 $$w^* = \underset{w}argmin\sum_j^n (t(x_i)-\sum_i^k w_i h_i(x_j))^2 + \lambda \sum_{i=1}^k (w_i)^2$$
 
