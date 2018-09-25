@@ -6,7 +6,7 @@ permalink: /about/
 
 My name is Cheng-Lin (Clark) Li. I received my Master of Scientist in Viterbi School of Engineering from University of Southern California (USC) in May 2018. My research areas focus on data informatics especially in A.I., machine learning, natural language processing with big data. I have 20 years of proven records as a software developer, designer, analyst, and manager at international companies with impactful business deliveries. These records demonstrate my knowledge, leadership and execution capabilities can help my team to conquer real-world challenges.
 
-I am available on the data scientist, machine learning engineer job market. You can review my proven records on [LinkedIn page](https://www.linkedin.com/in/chenglin-li/).
+Detail records on [LinkedIn page](https://www.linkedin.com/in/chenglin-li/).
 
 ### More Information
 
