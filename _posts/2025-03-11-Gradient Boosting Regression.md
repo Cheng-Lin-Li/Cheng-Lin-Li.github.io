@@ -1,7 +1,7 @@
 ---
 layout: post
-title: What is XYZ?
-tags: terminology
+title: What is Gradient Boosting Regression?
+tags: models
 ---
 
 <!-- more -->
