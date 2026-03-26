@@ -25,7 +25,7 @@ Consider the linear regression model:
 \[
 $$Y = \beta_0 + \beta_1 X_1 + \beta_2 X_2 + \cdots + \beta_p X_p + \epsilon$$
 \]
-When predictors $$\(X_i\)$$ and $$\(X_j\)$$ are highly correlated (e.g., correlation coefficient > 0.8 or 0.9), the matrix \(X^T X\) becomes near-singular. This causes the variance-covariance matrix of the coefficient estimates:
+When predictors \($$X_i$$\) and \($$X_j$$\) are highly correlated (e.g., correlation coefficient > 0.8 or 0.9), the matrix \(X^T X\) becomes near-singular. This causes the variance-covariance matrix of the coefficient estimates:
 \[
 $$\text{Var}(\hat{\beta}) = \sigma^2 (X^T X)^{-1}$$
 \]
@@ -38,8 +38,8 @@ Suppose we want to predict **house prices** (\(Y\)) using the following predicto
 - \($$X_3$$\): Living room area
 
 In real data, floor area and number of bedrooms are usually highly positively correlated (larger houses tend to have more bedrooms), with a correlation often exceeding 0.85. This creates multicollinearity:
-- The estimated coefficient \(\hat{\beta_1}\) (effect of floor area) becomes unstable and may even change sign across different samples.
-- Even if the model has strong explanatory power (Adjusted \(R^2\) close to 0.9), individual p-values may all exceed 0.05, making it impossible to determine whether floor area or number of bedrooms truly drives the price.
+- The estimated coefficient \($$\hat{\beta_1}$$\) (effect of floor area) becomes unstable and may even change sign across different samples.
+- Even if the model has strong explanatory power (Adjusted \($$R^2$$\) close to 0.9), individual p-values may all exceed 0.05, making it impossible to determine whether floor area or number of bedrooms truly drives the price.
 - Predictions for new houses become highly sensitive to small changes in the coefficients.
 
 The core issue is that while the model may predict well overall, the **interpretation and stability** of individual coefficients are severely compromised.
@@ -49,14 +49,14 @@ When multicollinearity is present, traditional OLS regression is not recommended
 
 1. **Ridge Regression** — The most commonly recommended solution  
    \[
-   \hat{\beta}^{\text{Ridge}} = \arg\min_{\beta} \left( \sum (y_i - \hat{y}_i)^2 + \lambda \sum \beta_j^2 \right)
+   $$\hat{\beta}^{\text{Ridge}} = \arg\min_{\beta} \left( \sum (y_i - \hat{y}_i)^2 + \lambda \sum \beta_j^2 \right)$$
    \]
-   - **Reason**: The L2 penalty (\(\lambda \sum \beta_j^2\)) shrinks coefficients toward zero, reducing variance and stabilizing estimates even when \(X^T X\) is ill-conditioned. It improves prediction accuracy with moderate bias.
+   - **Reason**: The L2 penalty ($$\(\lambda \sum \beta_j^2\)$$) shrinks coefficients toward zero, reducing variance and stabilizing estimates even when \(X^T X\) is ill-conditioned. It improves prediction accuracy with moderate bias.
    - Best for: Moderate number of predictors when you still want to keep all variables for interpretation.
 
 2. **Lasso Regression**  
    \[
-   \hat{\beta}^{\text{Lasso}} = \arg\min_{\beta} \left( \sum (y_i - \hat{y}_i)^2 + \lambda \sum |\beta_j| \right)
+   $$\hat{\beta}^{\text{Lasso}} = \arg\min_{\beta} \left( \sum (y_i - \hat{y}_i)^2 + \lambda \sum |\beta_j| \right)$$
    \]
    - **Reason**: The L1 penalty not only shrinks coefficients but can also set some to exactly zero, performing automatic feature selection and removing redundant correlated variables.
    - Best for: High-dimensional data where variable selection is desired.
@@ -86,29 +86,29 @@ When multicollinearity is present, traditional OLS regression is not recommended
 **VIF (Variance Inflation Factor)** is one of the most widely used diagnostics for detecting multicollinearity in multiple linear regression. It measures how much the variance of a regression coefficient is inflated due to linear correlations with other predictors.
 
 #### Mathematical Formula
-For the \( i \)-th predictor \( X_i \), the VIF is:
+For the $$\( i \)-th$$ predictor $$\( X_i \)$$, the VIF is:
 \[
-VIF_i = \frac{1}{1 - R_i^2}
+$$VIF_i = \frac{1}{1 - R_i^2}$$
 \]
-where \( R_i^2 \) is the coefficient of determination from the **auxiliary regression** — a regression where \( X_i \) is temporarily treated as the dependent variable and regressed on all the other independent variables in the model.
+where $$\( R_i^2 \)$$ is the coefficient of determination from the **auxiliary regression** — a regression where \( X_i \) is temporarily treated as the dependent variable and regressed on all the other independent variables in the model.
 
 The **Tolerance** is simply the reciprocal:
 \[
-\text{Tolerance}_i = 1 - R_i^2 = \frac{1}{VIF_i}
+$$\text{Tolerance}_i = 1 - R_i^2 = \frac{1}{VIF_i}$$
 \]
 
 #### Calculation Steps (Example with 3 predictors)
-Assume the model is: \( Y = \beta_0 + \beta_1 X_1 + \beta_2 X_2 + \beta_3 X_3 + \epsilon \)
+Assume the model is: $$\( Y = \beta_0 + \beta_1 X_1 + \beta_2 X_2 + \beta_3 X_3 + \epsilon \)$$
 
 1. Perform auxiliary regressions for each predictor:
-   - Regress \( X_1 \) on \( X_2 \) and \( X_3 \) → obtain \( R_1^2 \)
-   - Regress \( X_2 \) on \( X_1 \) and \( X_3 \) → obtain \( R_2^2 \)
-   - Regress \( X_3 \) on \( X_1 \) and \( X_2 \) → obtain \( R_3^2 \)
+   - Regress $$\( X_1 \) on \( X_2 \) and \( X_3 \) → obtain \( R_1^2 \)$$
+   - Regress $$\( X_2 \) on \( X_1 \) and \( X_3 \) → obtain \( R_2^2 \)$$
+   - Regress $$\( X_3 \) on \( X_1 \) and \( X_2 \) → obtain \( R_3^2 \)$$
 
 2. Compute VIF for each:
-   - \( VIF_1 = 1 / (1 - R_1^2) \)
-   - \( VIF_2 = 1 / (1 - R_2^2) \)
-   - \( VIF_3 = 1 / (1 - R_3^2) \)
+   - $$\( VIF_1 = 1 / (1 - R_1^2) \)$$
+   - $$\( VIF_2 = 1 / (1 - R_2^2) \)$$
+   - $$\( VIF_3 = 1 / (1 - R_3^2) \)$$
 
 In practice, statistical software (e.g., Python’s statsmodels, R’s car package) computes VIF automatically.
 
