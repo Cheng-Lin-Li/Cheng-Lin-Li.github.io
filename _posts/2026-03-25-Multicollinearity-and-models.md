@@ -23,7 +23,7 @@ Table of content:
 #### Mathematical Definition
 Consider the linear regression model:
 \[
-Y = \beta_0 + \beta_1 X_1 + \beta_2 X_2 + \cdots + \beta_p X_p + \epsilon
+$$Y = \beta_0 + \beta_1 X_1 + \beta_2 X_2 + \cdots + \beta_p X_p + \epsilon$$
 \]
 When predictors \(X_i\) and \(X_j\) are highly correlated (e.g., correlation coefficient > 0.8 or 0.9), the matrix \(X^T X\) becomes near-singular. This causes the variance-covariance matrix of the coefficient estimates:
 \[
