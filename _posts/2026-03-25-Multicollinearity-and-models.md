@@ -25,17 +25,17 @@ Consider the linear regression model:
 \[
 $$Y = \beta_0 + \beta_1 X_1 + \beta_2 X_2 + \cdots + \beta_p X_p + \epsilon$$
 \]
-When predictors $$\(X_i\) and \(X_j\)$$ are highly correlated (e.g., correlation coefficient > 0.8 or 0.9), the matrix \(X^T X\) becomes near-singular. This causes the variance-covariance matrix of the coefficient estimates:
-$$\[
-\text{Var}(\hat{\beta}) = \sigma^2 (X^T X)^{-1}
-\]$$
+When predictors $$\(X_i\)$$ and $$\(X_j\)$$ are highly correlated (e.g., correlation coefficient > 0.8 or 0.9), the matrix \(X^T X\) becomes near-singular. This causes the variance-covariance matrix of the coefficient estimates:
+\[
+$$\text{Var}(\hat{\beta}) = \sigma^2 (X^T X)^{-1}$$
+\]
 to have greatly inflated diagonal elements, leading to large standard errors and insignificant t-tests, even when the overall model has a high \(R^2\).
 
 #### Example
 Suppose we want to predict **house prices** (\(Y\)) using the following predictors:
-- \(X_1\): Floor area (square meters)
-- \(X_2\): Number of bedrooms
-- \(X_3\): Living room area
+- \($$X_1$$\): Floor area (square meters)
+- \($$X_2$$\): Number of bedrooms
+- \($$X_3$$\): Living room area
 
 In real data, floor area and number of bedrooms are usually highly positively correlated (larger houses tend to have more bedrooms), with a correlation often exceeding 0.85. This creates multicollinearity:
 - The estimated coefficient \(\hat{\beta_1}\) (effect of floor area) becomes unstable and may even change sign across different samples.
