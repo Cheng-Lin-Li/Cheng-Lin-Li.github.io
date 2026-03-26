@@ -51,7 +51,7 @@ When multicollinearity is present, traditional OLS regression is not recommended
    \[
    $$\hat{\beta}^{\text{Ridge}} = \arg\min_{\beta} \left( \sum (y_i - \hat{y}_i)^2 + \lambda \sum \beta_j^2 \right)$$
    \]
-   - **Reason**: The L2 penalty ($$\(\lambda \sum \beta_j^2\)$$) shrinks coefficients toward zero, reducing variance and stabilizing estimates even when \(X^T X\) is ill-conditioned. It improves prediction accuracy with moderate bias.
+   - **Reason**: The L2 penalty (\($$\lambda \sum \beta_j^2\)$$) shrinks coefficients toward zero, reducing variance and stabilizing estimates even when \(X^T X\) is ill-conditioned. It improves prediction accuracy with moderate bias.
    - Best for: Moderate number of predictors when you still want to keep all variables for interpretation.
 
 2. **Lasso Regression**  
@@ -86,7 +86,7 @@ When multicollinearity is present, traditional OLS regression is not recommended
 **VIF (Variance Inflation Factor)** is one of the most widely used diagnostics for detecting multicollinearity in multiple linear regression. It measures how much the variance of a regression coefficient is inflated due to linear correlations with other predictors.
 
 #### Mathematical Formula
-For the $$\( i \)-th$$ predictor $$\( X_i \)$$, the VIF is:
+For the \($$ i $$\)-th predictor \( $$X_i$$ \), the VIF is:
 \[
 $$VIF_i = \frac{1}{1 - R_i^2}$$
 \]
