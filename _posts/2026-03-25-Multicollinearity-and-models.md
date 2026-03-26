@@ -51,7 +51,7 @@ When multicollinearity is present, traditional OLS regression is not recommended
    \[
    $$\hat{\beta}^{\text{Ridge}} = \arg\min_{\beta} \left( \sum (y_i - \hat{y}_i)^2 + \lambda \sum \beta_j^2 \right)$$
    \]
-   - **Reason**: The L2 penalty (\($$\lambda \sum \beta_j^2\)$$) shrinks coefficients toward zero, reducing variance and stabilizing estimates even when \(X^T X\) is ill-conditioned. It improves prediction accuracy with moderate bias.
+   - **Reason**: The L2 penalty (\($$\lambda \sum \beta_j^2$$\)) shrinks coefficients toward zero, reducing variance and stabilizing estimates even when \(X^T X\) is ill-conditioned. It improves prediction accuracy with moderate bias.
    - Best for: Moderate number of predictors when you still want to keep all variables for interpretation.
 
 2. **Lasso Regression**  
@@ -90,7 +90,7 @@ For the \($$ i $$\)-th predictor \( $$X_i$$ \), the VIF is:
 \[
 $$VIF_i = \frac{1}{1 - R_i^2}$$
 \]
-where $$\( R_i^2 \)$$ is the coefficient of determination from the **auxiliary regression** — a regression where \( X_i \) is temporarily treated as the dependent variable and regressed on all the other independent variables in the model.
+where \( $$R_i^2$$ \) is the coefficient of determination from the **auxiliary regression** — a regression where \( X_i \) is temporarily treated as the dependent variable and regressed on all the other independent variables in the model.
 
 The **Tolerance** is simply the reciprocal:
 \[
@@ -106,9 +106,9 @@ Assume the model is: $$\( Y = \beta_0 + \beta_1 X_1 + \beta_2 X_2 + \beta_3 X_3 
    - Regress $$\( X_3 \) on \( X_1 \) and \( X_2 \) → obtain \( R_3^2 \)$$
 
 2. Compute VIF for each:
-   - $$\( VIF_1 = 1 / (1 - R_1^2) \)$$
-   - $$\( VIF_2 = 1 / (1 - R_2^2) \)$$
-   - $$\( VIF_3 = 1 / (1 - R_3^2) \)$$
+   - \($$ VIF_1 = 1 / (1 - R_1^2) $$\)
+   - \($$ VIF_2 = 1 / (1 - R_2^2) $$\)
+   - \($$ VIF_3 = 1 / (1 - R_3^2) $$\)
 
 In practice, statistical software (e.g., Python’s statsmodels, R’s car package) computes VIF automatically.
 
@@ -118,9 +118,9 @@ In practice, statistical software (e.g., Python’s statsmodels, R’s car packa
 - **VIF > 5** (strict) or **VIF > 10** (lenient): Severe multicollinearity. Coefficients become unstable with large standard errors.
 
 #### Numerical Example
-- Auxiliary $$\( R_1^2 = 0.80 \) → \( VIF_1 = 5 \)$$
-- Auxiliary $$\( R_2^2 = 0.90 \) → \( VIF_2 = 10 \)$$
-- Auxiliary $$\( R_3^2 = 0.60 \) → \( VIF_3 = 2.5 \)$$
+- Auxiliary \( $$R_1^2 = 0.80$$ \) → \($$ VIF_1 = 5$$ \)
+- Auxiliary \( $$R_2^2 = 0.90$$ \) → \( $$VIF_2 = 10$$ \)
+- Auxiliary \( $$R_3^2 = 0.60$$ \) → \($$ VIF_3 = 2.5$$ \)
 
 Here, \( $$X_2$$ \) shows severe multicollinearity (VIF=10).
 
