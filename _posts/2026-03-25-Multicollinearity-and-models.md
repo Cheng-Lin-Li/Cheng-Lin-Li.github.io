@@ -98,12 +98,12 @@ $$\text{Tolerance}_i = 1 - R_i^2 = \frac{1}{VIF_i}$$
 \]
 
 #### Calculation Steps (Example with 3 predictors)
-Assume the model is: $$\( Y = \beta_0 + \beta_1 X_1 + \beta_2 X_2 + \beta_3 X_3 + \epsilon \)$$
+Assume the model is: \($$ Y = \beta_0 + \beta_1 X_1 + \beta_2 X_2 + \beta_3 X_3 + \epsilon $$\)
 
 1. Perform auxiliary regressions for each predictor:
-   - Regress $$\( X_1 \) on \( X_2 \) and \( X_3 \) → obtain \( R_1^2 \)$$
-   - Regress $$\( X_2 \) on \( X_1 \) and \( X_3 \) → obtain \( R_2^2 \)$$
-   - Regress $$\( X_3 \) on \( X_1 \) and \( X_2 \) → obtain \( R_3^2 \)$$
+   - Regress \($$X_1$$ \) on \( $$X_2$$ \) and \( $$X_3$$ \) → obtain \( $$R_1^2$$ \)
+   - Regress \($$X_2$$ \) on \( $$X_1$$ \) and \( $$X_3$$ \) → obtain \( $$R_2^2$$ \)
+   - Regress \($$X_3$$ \) on \( $$X_1$$ \) and \( $$X_2$$ \) → obtain \( $$R_3^2$$ \)
 
 2. Compute VIF for each:
    - \($$ VIF_1 = 1 / (1 - R_1^2) $$\)
