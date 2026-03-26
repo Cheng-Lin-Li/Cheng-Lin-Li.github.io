@@ -25,10 +25,10 @@ Consider the linear regression model:
 \[
 $$Y = \beta_0 + \beta_1 X_1 + \beta_2 X_2 + \cdots + \beta_p X_p + \epsilon$$
 \]
-When predictors \(X_i\) and \(X_j\) are highly correlated (e.g., correlation coefficient > 0.8 or 0.9), the matrix \(X^T X\) becomes near-singular. This causes the variance-covariance matrix of the coefficient estimates:
-\[
+When predictors $$\(X_i\) and \(X_j\)$$ are highly correlated (e.g., correlation coefficient > 0.8 or 0.9), the matrix \(X^T X\) becomes near-singular. This causes the variance-covariance matrix of the coefficient estimates:
+$$\[
 \text{Var}(\hat{\beta}) = \sigma^2 (X^T X)^{-1}
-\]
+\]$$
 to have greatly inflated diagonal elements, leading to large standard errors and insignificant t-tests, even when the overall model has a high \(R^2\).
 
 #### Example
