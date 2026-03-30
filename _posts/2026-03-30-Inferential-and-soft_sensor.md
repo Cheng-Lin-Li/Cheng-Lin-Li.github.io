@@ -104,9 +104,8 @@ while True:
 
 Following this framework gives you a reliable, maintainable inferential/soft sensor that delivers real-time predictions with high accuracy (often >90% in well-tuned industrial cases). The exact model choice depends on your process nonlinearity and data volume, but the **structured steps above are universally the best implementation path**.
 
-以下是您提供的英文內容翻譯成繁體中文的版本（語言自然流暢，適合工業與工程領域使用）：
-
 ---
+# 最佳實作 inferential 或 soft sensor 模型的方式為何?
 
 **實現預測模型作為推斷式感測器（Inferential Sensor）或軟感測器（Soft Sensor）的最佳方法，是採用結構化的資料驅動（或混合灰盒）方法，使用監督式機器學習。** 這是製程控制、製造業、化工、生物製程等領域的業界標準。因為關鍵品質變數（如成分、黏度、產品濃度等）的直接「硬」感測器，通常太慢、太貴、不可靠，或根本無法線上即時使用。
 
