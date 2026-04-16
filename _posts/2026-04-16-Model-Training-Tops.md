@@ -26,7 +26,7 @@ Table of content:
 | Method                                 | Which is the step this method apply | Benefits |                                                            |
 |----------------------------------------|-------------------------------------|---------------------------------------------------------------------|
 | Adagrad, RMSProp, Momentum, Adam, etc. | Find the best function | Better Optimization (not for Generalization)|
-| AdamW                                  | Find the best function| Better Generalization (cf. Adam), Better Optimization (cf. Vanilla gradient Descent), (not for Optimization cf. Adam) |
+| AdamW                                  | Find the best function| Better Generalization (cf. Adam), Better Optimization (cf. Vanilla Gradient Descent), (not for Optimization cf. Adam) |
 | Dropout                                | Find the best function| Better Generalization|
 | Weight Decay                           | Find the best function| Better Generalization|
 | Initialization (e.g., pre-train)       | Find the best function| Better Optimization, Better Generalization|
@@ -52,7 +52,7 @@ Table of content:
 | 方法名 | 改了那一個步驟 | 帶來什麼好處|
 |---|---|----------------------------------------------------------------------|
 |Adagrad, RMSProp, Momentum, Adam, etc.| 找最好的函式 | Better Optimization  |
-|AdamW | 找最好的函式 | Better Generalization (cf. Adam), Better Optimization (cf. Vanilla), (not for Optimization cf. Adam) |
+|AdamW | 找最好的函式 | Better Generalization (cf. Adam), Better Optimization (cf. Vanilla Gradient Descent), (not for Optimization cf. Adam) |
 |Dropout | 找最好的函式 | Better Generalization|
 |Weight Decay | 找最好的函式 | Better Generalization |
 |Initialization (e.g., pre-train)| 找最好的函式 | Better Optimization, Better Generalization  |
