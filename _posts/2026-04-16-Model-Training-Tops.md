@@ -25,8 +25,8 @@ Table of content:
 
 | Method                                 | Which is the step this method apply | Benefits |                                                            |
 |----------------------------------------|-------------------------------------|---------------------------------------------------------------------|
-| Adagrad, RMSProp, Momentum, Adam, etc. | Find the best function | Better Optimization |
-| AdamW                                  | Find the best function| Better Generalization (cf. Adam), Better Optimization (cf. Vanilla gradient Descent) |
+| Adagrad, RMSProp, Momentum, Adam, etc. | Find the best function | Better Optimization (not for Generalization)|
+| AdamW                                  | Find the best function| Better Generalization (cf. Adam), Better Optimization (cf. Vanilla gradient Descent), (not for Optimization cf. Adam) |
 | Dropout                                | Find the best function| Better Generalization|
 | Weight Decay                           | Find the best function| Better Generalization|
 | Initialization (e.g., pre-train)       | Find the best function| Better Optimization, Better Generalization|
@@ -49,21 +49,21 @@ Table of content:
 
 ### 各種方法的列表與其好處:
 
-| 方法名 | 改了那一個步驟 | 帶來什麼好處 |
-|---|---|---|
-|Adagrad, RMSProp, Momentum, Adam, etc.| 找最好的函式 | Better Optimization |
-|AdamW | 找最好的函式 | Better Generalization (cf. Adam), Better Optimization (cf. Vanilla)|
-|Dropout | 找最好的函式 | Better Generalization |
-|Weight Decay | 找最好的函式 | Better Generalization|
-|Initialization (e.g., pre-train)| 找最好的函式 | Better Optimization, Better Generalization|
-|CNN (e.g., for image)| 改變函式搜尋範圍 | Better Generalization|
-|Skip Connection | 改變函式搜尋範圍 | Better Optimization|
-|Normalization | 改變函式搜尋範圍 | Better Optimization, (Sometimes Better Generalization)|
+| 方法名 | 改了那一個步驟 | 帶來什麼好處|
+|---|---|----------------------------------------------------------------------|
+|Adagrad, RMSProp, Momentum, Adam, etc.| 找最好的函式 | Better Optimization  |
+|AdamW | 找最好的函式 | Better Generalization (cf. Adam), Better Optimization (cf. Vanilla), (not for Optimization cf. Adam) |
+|Dropout | 找最好的函式 | Better Generalization|
+|Weight Decay | 找最好的函式 | Better Generalization |
+|Initialization (e.g., pre-train)| 找最好的函式 | Better Optimization, Better Generalization  |
+|CNN (e.g., for image)| 改變函式搜尋範圍 | Better Generalization |
+|Skip Connection | 改變函式搜尋範圍 | Better Optimization  |
+|Normalization | 改變函式搜尋範圍 | Better Optimization, (Sometimes Better Generalization) |
 |Do not use accuracy as loss | 我要找什麼 | Better Optimization |
-|More training data | 我要找什麼 | Better Generalization|
-|Data Augmentation (e.g. Mixup)| 我要找什麼 | Better Generalization|
-|Semi-supervised (e.g., Entropy, Graph)| 我要找什麼 | Better Generalization|
-|Parameter Regularization| 我要找甚麼 | Better Generalization|
+|More training data | 我要找什麼 | Better Generalization  |
+|Data Augmentation (e.g. Mixup)| 我要找什麼 | Better Generalization |
+|Semi-supervised (e.g., Entropy, Graph)| 我要找什麼 | Better Generalization  |
+|Parameter Regularization| 我要找甚麼 | Better Generalization  |
 
 
 Reference:
