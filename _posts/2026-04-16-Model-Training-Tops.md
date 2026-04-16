@@ -1,6 +1,6 @@
 ---
 layout: post
-title: What are tips for models training?
+title: The Major 3 Steps in a Neural Net Model Training.
 tags: training
 ---
 
@@ -14,9 +14,12 @@ Table of content:
 {:toc}
 
 ---
-# The Major 3 Steps in a Neural Net Model Training
+# 訓練類神經網路的各種訣竅
+## The Major 3 Steps in a Neural Net Model Training
 
-## Step 1: What is the task?  Step2: What is the best function for the task? Step3: Choose the best functional scope.
+- **Step 1:** What is the task?  
+- **Step 2:** What is the best function for the task? 
+- **Step 3:** Choose the best functional scope.
 
 ## Table of methods/functions for their benefit:
 
@@ -37,11 +40,14 @@ Table of content:
 | Parameter Regularization               | What I am looking for | Better Generalization|
 
 
-# 類神經網路訓練的三個主要步驟
+# 訓練類神經網路的各種訣竅
+### 類神經網路訓練的三個主要步驟
 
-## Step 1: 我要找什麼?  Step2: 我有哪些函式可以選擇? Step3: 選一個最好的函式範圍.
+- **Step 1:** 我要找什麼?  
+- **Step 2:** 我有哪些函式可以選擇? 
+- **Step 3:** 選一個最好的函式範圍.
 
-## 各種方法的列表與其好處:
+### 各種方法的列表與其好處:
 
 | 方法名 | 改了那一個步驟 | 帶來什麼好處 |
 |---|---|---|
