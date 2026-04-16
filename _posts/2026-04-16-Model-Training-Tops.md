@@ -1,6 +1,6 @@
 ---
 layout: post
-title: The Major 3 Steps in a Neural Net Model Training.
+title: Tips for a Neural network model training
 tags: training
 ---
 
@@ -14,8 +14,8 @@ Table of content:
 {:toc}
 
 ---
-# 訓練類神經網路的各種訣竅
-## The Major 3 Steps in a Neural Net Model Training
+# Tips for a Neural network model training
+## The Major 3 Steps in a Neural network Model Training
 
 - **Step 1:** What is the task?  
 - **Step 2:** What is the best function for the task? 
