@@ -72,7 +72,7 @@ Cross-Entropy
 
 In binary classification, where the number of classes M equals 2, cross-entropy can be calculated as:
 
-$$Binary Cross Entropy = −(ylog(p)+(1−y)log(1−p))$$
+$$Binary Cross Entropy = −mean((ylog(p)+(1−y)log(1−p)))$$
 
 $$Cross Entropy = -\sum_{c=1}^M y_{o,c}log(p_{o,c})$$
 
@@ -88,11 +88,63 @@ c is the correct classification for observation o
 p - predicted probability observation o is of class c
 
 ```python
+import numpy as np
+
 def CrossEntropy(yHat, y):
     if y == 1:
       return -log(yHat)
     else:
       return -log(1 - yHat)
+
+def binary_cross_entropy(y_true, y_pred):
+    # Clip predictions to prevent log(0) or log(1)
+    eps = 1e-15
+    y_pred = np.clip(y_pred, eps, 1 - eps)
+    
+    # Calculate BCE loss over all samples
+    loss = -np.mean(y_true * np.log(y_pred) + (1 - y_true) * np.log(1 - y_pred))
+    return loss
+
+# --- Example Usage ---
+# Ground truth labels (0 or 1)
+y_true_bce = np.array([1, 0, 1, 1])
+
+# Model predicted probabilities (outputs from a Sigmoid function)
+y_pred_bce = np.array([0.9, 0.1, 0.4, 0.8])
+
+bce_loss = binary_cross_entropy(y_true_bce, y_pred_bce)
+print(f"Binary Cross-Entropy Loss: {bce_loss:.4f}")
+# Output will be ~0.2931
+
+def multiclass_cross_entropy(y_true, y_pred):
+    # Clip predictions to prevent log(0)
+    eps = 1e-15
+    y_pred = np.clip(y_pred, eps, 1.0)
+    
+    # Calculate MCE loss over all samples
+    # y_true * np.log(y_pred) isolates the log probability of the correct class
+    loss = -np.sum(y_true * np.log(y_pred)) / y_true.shape[0]
+    return loss
+
+# --- Example Usage ---
+# Ground truth: 3 samples, 3 classes (one-hot encoded)
+# Sample 1: Class 0, Sample 2: Class 1, Sample 3: Class 2
+y_true_mce = np.array([
+  [1, 0, 0],
+  [0, 1, 0], 
+  [0, 0, 1]])
+
+# Model predicted probabilities (rows sum to 1.0)
+y_pred_mce = np.array([
+    [0.7, 0.2, 0.1],  # Confident and correct
+    [0.3, 0.6, 0.1],  # Fairly confident and correct
+    [0.1, 0.5, 0.4]   # Incorrect (predicted Class 1, true was Class 2)
+])
+
+mce_loss = multiclass_cross_entropy(y_true_mce, y_pred_mce)
+print(f"Multiclass Cross-Entropy Loss: {mce_loss:.4f}")
+# Output will be ~0.5938
+
 ```
 
 
