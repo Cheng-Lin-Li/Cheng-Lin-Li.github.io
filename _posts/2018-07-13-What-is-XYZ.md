@@ -123,7 +123,7 @@ def multiclass_cross_entropy(y_true, y_pred):
     
     # Calculate MCE loss over all samples
     # y_true * np.log(y_pred) isolates the log probability of the correct class
-    loss = -np.sum(y_true * np.log(y_pred)) / y_true.shape[0]
+    loss = -np.mean(np.sum(y_true * np.log(y_pred)) / y_true.shape[0])
     return loss
 
 # --- Example Usage ---
