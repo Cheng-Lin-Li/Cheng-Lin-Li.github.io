@@ -72,7 +72,7 @@ Cross-Entropy
 
 In binary classification, where the number of classes M equals 2, cross-entropy can be calculated as:
 
-$$Binary Cross Entropy = −mean((ylog(p)+(1−y)log(1−p)))$$
+$$Binary Cross Entropy = −(ylog(p)+(1−y)log(1−p))$$
 
 $$Cross Entropy = -\sum_{c=1}^M y_{o,c}log(p_{o,c})$$
 
