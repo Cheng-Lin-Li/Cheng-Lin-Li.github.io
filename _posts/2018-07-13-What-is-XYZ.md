@@ -402,7 +402,45 @@ Try to get more training examples, highly regularized, highly pruned decision, l
 
 ## What is Bias-Variance tradeoff?
 
+The bias-variance tradeoff is the balance between a model's simplicity (bias) and its flexibility (variance) when learning from data, designed to minimize total prediction error on unseen data.
+
 To get good predictions, you'll need to find a balance of bias and variance that minimizes "total error".
+
+
+Core Concepts
+
+• Bias:
+	• The error caused by overly simplistic assumptions in the algorithm.
+	• High bias means the model misses relevant relationships between features and target outputs.
+	• Leads to underfitting, where the model performs poorly on both training data and new data.
+	• Example: Using a straight line to fit a curved, non-linear dataset.
+• Variance:
+	• The error caused by a model's excessive sensitivity to small fluctuations and random noise in the training set.
+	• High variance means the model learns the training data "too well", capturing noise instead of general patterns.
+	• Leads to overfitting, where the model has very low training error but poor generalization to unseen test data.
+	• Example: A high-degree polynomial curve that wiggles through every single training point.
+• Irreducible Error:
+	• The natural noise or ambiguity inherent in the data itself that no model can eliminate.
+
+The Tradeoff Relationship
+
+• Increasing model complexity (e.g., adding more parameters, using deep decision trees) generally decreases bias but increases variance.
+• Decreasing model complexity (e.g., dropping features, applying strict constraints) generally increases bias but decreases variance.
+• The goal is to hit the "sweet spot" on the U-shaped total error curve where the sum of squared bias and variance is minimized.
+
+How to Manage It
+
+You can control bias and variance using standard machine learning techniques detailed on GeeksforGeeks and IBM:
+• To reduce high bias (underfitting):
+	• Increase model complexity or switch to a more expressive algorithm.
+	• Add more relevant features or engineer new interaction terms.
+	• Reduce or remove regularization.
+• To reduce high variance (overfitting):
+	• Add more training data.
+	• Apply regularization methods like L1 (Lasso) or L2 (Ridge).
+	• Use feature selection to drop noisy or redundant variables.
+	• Use ensemble methods like Random Forests, Bagging, or Boosting.
+	• Use cross-validation to properly evaluate generalization performance.
 
 ### What is Bias-Variance decomposition of error?
 Assume that $$Y = f(X) + \epsilon = 0$$ where $$E(\epsilon) = 0$$ and $$Var(\epsilon) = \sigma_{\epsilon}^2$$, we can derive an expression for the expected prediction error of a regression fit $$\hat{f}(X)$$ at an input point $$X = x_0$$, using squared-error loss:
